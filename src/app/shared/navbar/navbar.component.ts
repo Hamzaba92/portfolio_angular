@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { log } from 'console';
 
 @Component({
   selector: 'app-navbar',
@@ -18,6 +17,9 @@ export class NavbarComponent {
   aboutme: boolean = false;
   skills: boolean = false;
   portfolio: boolean = false;
+
+  langDE: boolean = false;
+  langEN: boolean = false;
 
 
   clickedAboutMeLink() {
@@ -47,5 +49,19 @@ export class NavbarComponent {
       this.clickedPortfolio();
     }
   }
+
+  changeLanguage(id: string) {
+    if (id === 'en') {
+        this.langEN = true;
+        this.langDE = false;
+    } else if (id === 'de') {
+        this.langEN = false;
+        this.langDE = true;
+    } else {
+        this.langEN = false;
+        this.langDE = false;
+    }
+}
+
 
 }
