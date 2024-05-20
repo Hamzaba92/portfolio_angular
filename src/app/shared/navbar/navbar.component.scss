@@ -1,0 +1,64 @@
+$hover_color: #00BEE8;
+
+.overcontainer {
+    height: 110px;
+    width: 100%;
+    background-color: rgba(20, 29, 47, 1);
+    display: flex;
+}
+
+.header {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    width: 324px;
+    max-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: $hover_color;
+        }
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.clicked {
+    position: relative;
+    color: $hover_color;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: -2px;
+        bottom: -2px;
+        width: 37px;
+        height: 2px;
+        background: #4B47FF;
+        border-radius: 0 2px 2px 0px;
+        z-index: 1;
+    }
+}

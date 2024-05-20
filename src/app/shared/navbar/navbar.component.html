@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<div class="overcontainer">
+    <nav class="header">
+        <div class="logo">
+        Mudzahedin
+        </div>
+
+        <div class="right-section">
+            <a [ngClass]="{'clicked': aboutme}" id="aboutme" href="#" (click)="clickedLink('aboutme')">About me</a>
+            <a [ngClass]="{'clicked': skills}" href="#" id="skills" (click)="clickedLink('skills')">Skills</a>
+            <a [ngClass]="{'clicked': portfolio}" href="#" id="portfolio" (click)="clickedLink('portfolio')">Portfolio</a>
+        </div>
+    </nav>
+
+</div>
