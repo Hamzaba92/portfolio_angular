@@ -1,0 +1,23 @@
+$color_background: #141D2F;
+$color_violett: #4B47FF;
+$color_button: #00BEE8;
+
+.background-landing-page{
+    height: 100vh;
+    width: 100%;
+    background-color: $color_background;
+    img{
+        display: flex;
+        position: relative;
+        margin-bottom: -1738px;
+    }
+}
+
+.vectorpicture-right-side{
+    display: flex;
+    img{
+        width: 100%;
+        z-index: 1;
+    }
+}
+

@@ -23,6 +23,7 @@ $hover_color: #00BEE8;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 54px;
 }
 
 .right-section {
@@ -111,8 +112,6 @@ $hover_color: #00BEE8;
     }
 }
 
-
-
 .letter1 { color: white; } 
 .letter2 { color: white; } 
 .letter3 { color: white; } 
@@ -128,15 +127,20 @@ $hover_color: #00BEE8;
         &::after{
                 content: '';
                 position: absolute;
-                top: 5.2px; /* Passe dies an, um den Punkt richtig zu positionieren */
+                top: 7.6px; 
                 left: 50%;
                 transform: translateX(-50%);
-                width: 0.12em; 
-                height: 0.12em; 
+                width: 0.18em; 
+                height: 0.18em; 
                 background-color: white;
-                border-radius: 50%; 
+                border-radius: 50%;
             }
 } 
 
 .letter10 { color: $hover_color; } 
+
+.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, .letter9, .letter10{
+    font-size: 24px;
+    font-weight: 600;
+}
 
