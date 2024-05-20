@@ -1,20 +1,36 @@
 <div class="overcontainer">
     <nav class="header">
         <div class="logo">
-        Mudzahedin
+            <span class="letter letter1">M</span>
+            <span class="letter letter2">u</span>
+            <span class="letter letter3">d</span>
+            <span class="letter letter4">z</span>
+            <span class="letter letter5">a</span>
+            <span class="letter letter6">h</span>
+            <span class="letter letter7">e</span>
+            <span class="letter letter8">d</span>
+            <span class="letter letter9">i</span>
+            <span class="letter letter10">n</span>
         </div>
 
         <div class="right-section">
 
             <div class="language-container">
-                <a [ngClass]="{'clicked-for-EN-DE-mirror': langDE}" (click)="changeLanguage('de')"  href="#">EN</a>
+                <a [ngClass]="{'clicked-for-EN-DE-mirror': langDE}" (click)="changeLanguage('de')" href="#">EN</a>
                 <div></div>
                 <a [ngClass]="{'clicked-for-EN-DE': langEN}" (click)="changeLanguage('en')" href="#">DE</a>
             </div>
-
+            @if (langDE) {
             <a [ngClass]="{'clicked': aboutme}" id="aboutme" href="#" (click)="clickedLink('aboutme')">About me</a>
             <a [ngClass]="{'clicked': skills}" href="#" id="skills" (click)="clickedLink('skills')">Skills</a>
-            <a [ngClass]="{'clicked': portfolio}" href="#" id="portfolio" (click)="clickedLink('portfolio')">Portfolio</a>
+            <a [ngClass]="{'clicked': portfolio}" href="#" id="portfolio"
+                (click)="clickedLink('portfolio')">Portfolio</a>
+            }@else{
+                <a [ngClass]="{'clicked': aboutme}" id="aboutme" href="#" (click)="clickedLink('aboutme')">Über mich</a>
+                <a [ngClass]="{'clicked': skills}" href="#" id="skills" (click)="clickedLink('skills')">Skills</a>
+                <a [ngClass]="{'clicked': portfolio}" href="#" id="portfolio"
+                    (click)="clickedLink('portfolio')">Portfolio</a>
+            }
         </div>
     </nav>
 

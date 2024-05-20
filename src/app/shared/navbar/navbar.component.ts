@@ -52,16 +52,23 @@ export class NavbarComponent {
 
   changeLanguage(id: string) {
     if (id === 'en') {
-        this.langEN = true;
-        this.langDE = false;
+      this.quickEnglishLink();
     } else if (id === 'de') {
-        this.langEN = false;
-        this.langDE = true;
+      this.quickGermanLink();
     } else {
-        this.langEN = false;
-        this.langDE = false;
+      this.langEN = false;
+      this.langDE = false;
     }
-}
+  }
 
+  quickEnglishLink() {
+    this.langDE = false;
+    this.langEN = true;
+  }
+
+  quickGermanLink() {
+    this.langDE = true;
+    this.langEN = false;
+  }
 
 }

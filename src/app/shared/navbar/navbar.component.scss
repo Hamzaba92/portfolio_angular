@@ -110,3 +110,33 @@ $hover_color: #00BEE8;
         transform: scaleX(-1);
     }
 }
+
+
+
+.letter1 { color: white; } 
+.letter2 { color: white; } 
+.letter3 { color: white; } 
+.letter4 { color: white; } 
+.letter5 { color: white; } 
+.letter6 { color: white; } 
+.letter7 { color: white; } 
+.letter8 { color: $hover_color; } 
+
+.letter9 { 
+    color: $hover_color; 
+    position: relative;
+        &::after{
+                content: '';
+                position: absolute;
+                top: 5.2px; /* Passe dies an, um den Punkt richtig zu positionieren */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0.12em; 
+                height: 0.12em; 
+                background-color: white;
+                border-radius: 50%; 
+            }
+} 
+
+.letter10 { color: $hover_color; } 
+
