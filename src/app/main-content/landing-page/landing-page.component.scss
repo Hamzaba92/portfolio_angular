@@ -7,17 +7,19 @@ $color_button: #00BEE8;
     width: 100%;
     background-color: $color_background;
     position: relative;
+
     .portrait-container {
         position: absolute;
         top: 10px;
-        left: -489px;
-        width: 100%;
+        left: -25px;
+        width: 50%;
         height: 48%;
         z-index: 0;
         display: flex;
         justify-content: center;
-        .leftbehindfoto-blue{
-            width: 55%; 
+
+        .leftbehindfoto-blue {
+            width: 55%;
             height: 100%;
             position: absolute;
             left: 13%;
@@ -25,8 +27,8 @@ $color_button: #00BEE8;
             transform: rotate(90deg);
         }
 
-        .rightbehindfoto-turquise{
-            width: 50%; 
+        .rightbehindfoto-turquise {
+            width: 50%;
             height: 100%;
             position: absolute;
             right: 14%;
@@ -41,7 +43,6 @@ $color_button: #00BEE8;
 
         }
     }
-
 }
 
 .vectorpicture-right-side {
@@ -50,5 +51,45 @@ $color_button: #00BEE8;
     img {
         width: 100%;
         z-index: 1;
+    }
+}
+
+.iam-dev-txt {
+    width: 950px;
+    height: 172px;
+    font-family: 'Poppins';
+    position: absolute;
+    left: 37%;
+    top: 35%;
+    z-index: 2;
+    display: flex;
+
+    .rotate-txt {
+        transform: rotate(270deg);
+        color: white;
+        font-size: 64px;
+        margin: 0;
+        line-height: 76px;
+        padding-top: 72px;
+    
+    }
+}
+
+.flex-coloum {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    .name{
+        color: white;
+        font-size: 76px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 96px;
+    }
+    .color-change{
+        color: $color_violett;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 69px;
     }
 }
