@@ -96,22 +96,18 @@ $color_button: #00BEE8;
 }
 
 .button-lets-talk{
-    font-family: 'Poppins';
-    position: absolute;
-    margin-left: 53%;
-    top: 60%;
-    z-index: 2;
     display: flex;
-
+    justify-content: center;
     button{
         width: 165px;
         height: 58px;
         font-size: 23px;
         font-weight: 400;
-        font-family: 'Poppins';
         background-color: $color_button;
         color: white;
         border-radius: 9px 9px 9px 9px;
         border: none;
+        margin-right: 175px;
+        margin-top: 36px;
     }
 }
