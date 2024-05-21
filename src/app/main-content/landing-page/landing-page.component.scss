@@ -139,7 +139,7 @@ $color_button: #00BEE8;
         flex-direction: row;
         color: white;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         column-gap: 20px;
         font-weight: 500;
         height: 70px;
@@ -148,6 +148,9 @@ $color_button: #00BEE8;
                 height: 2px;
                 width: 100px;
                 background-color: $color_violett;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .github-svg {
