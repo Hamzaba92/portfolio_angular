@@ -10,10 +10,10 @@ $color_button: #00BEE8;
 
     .portrait-container {
         position: absolute;
-        top: 10px;
+        top: 15%;
         left: -25px;
         width: 50%;
-        height: 48%;
+        height: 35%;
         z-index: 0;
         display: flex;
         justify-content: center;
@@ -39,7 +39,7 @@ $color_button: #00BEE8;
 
         .portraitfoto {
             position: relative;
-            height: 610px;
+            height: 555px;
 
         }
     }
@@ -73,21 +73,22 @@ $color_button: #00BEE8;
         padding-top: 72px;
     }
 
-
 }
 
 .flex-coloum {
     display: flex;
     flex-direction: column;
     margin: 0;
-    .name{
+
+    .name {
         color: white;
         font-size: 76px;
         font-weight: 700;
         margin: 0;
         line-height: 96px;
     }
-    .color-change{
+
+    .color-change {
         color: $color_violett;
         font-weight: 400;
         font-size: 58px;
@@ -95,10 +96,11 @@ $color_button: #00BEE8;
     }
 }
 
-.button-lets-talk{
+.button-lets-talk {
     display: flex;
     justify-content: center;
-    button{
+
+    button {
         width: 165px;
         height: 58px;
         font-size: 23px;
@@ -110,11 +112,86 @@ $color_button: #00BEE8;
         margin-right: 175px;
         margin-top: 36px;
 
-        &:hover{
+        &:hover {
             background-color: $color_violett;
             scale: 1.2;
             cursor: pointer;
             transition: all ease-in-out 0.55s;
         }
     }
+}
+
+.socialmedia-links {
+    position: absolute;
+    left: 0%;
+    top: 70%;
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    height: 350px;
+    max-width: 1440px;
+    width: 100%;
+
+    .overcontainer-left {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        font-weight: 500;
+        
+
+        .empty-bar {
+            height: 2px;
+            width: 100px;
+            background-color: $color_violett;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .github-svg {
+            &:hover {
+                scale: 1.25;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        .email-svg {
+            &:hover {
+                scale: 1.25;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        .linkedIn-svg {
+            &:hover {
+                scale: 1.25;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        span {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .overcontainer-right {
+        color: white;
+        display: flex;
+        align-items: center;
+        img{
+            display: flex;
+        }
+     
+    }
+
 }
