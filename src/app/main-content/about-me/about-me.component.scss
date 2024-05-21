@@ -1,0 +1,71 @@
+$color_background: #141D2F;
+$color_violett: #4B47FF;
+$color_button: #00BEE8;
+
+.background-about-me {
+    background-color: $color_background;
+    height: calc(100vh - 110px);
+    width: 100%;
+}
+
+.left-side {
+    position: absolute;
+    z-index: 51;
+    font-family: 'Poppins';
+    color: white;
+    .about-me-cont{
+        position: absolute;
+        height: 340px;
+        width: 480px;
+        left: 100px;
+        gap: 10px;
+        .title{
+            font-size: 76px;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 700;
+            margin-bottom: 35px;
+            display: flex;
+        }
+
+        .introducing-txt{
+            height: 120px;
+            width: 396px;
+            margin-top: 35px;
+        }
+
+        .blue-puzzle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            margin-top: 35px;
+            img{
+                height: 50px;
+                width: 50px;
+                object-fit: contain;
+            }
+            span{
+                height: 86px;
+                width: 396px;
+            }
+        }
+
+        .blue-lamp{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                height: 50px;
+                width: 50px;
+                object-fit: contain;
+            }
+            span{
+                height: 86px;
+                width: 396px;
+            }
+        }
+
+
+    }
+}
