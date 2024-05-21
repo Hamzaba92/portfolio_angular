@@ -111,7 +111,6 @@ $color_button: #00BEE8;
         border: none;
         margin-right: 175px;
         margin-top: 36px;
-
         &:hover {
             background-color: $color_violett;
             scale: 1.2;
@@ -124,13 +123,13 @@ $color_button: #00BEE8;
 .socialmedia-links {
     position: absolute;
     left: 0%;
-    top: 60%;
+    top: 73%;
     z-index: 50;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Poppins';
-    height: 350px;
+    height: 165px;
     max-width: 1440px;
     width: 100%;
 
