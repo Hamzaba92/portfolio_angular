@@ -71,8 +71,9 @@ $color_button: #00BEE8;
         margin: 0;
         line-height: 76px;
         padding-top: 72px;
-    
     }
+
+
 }
 
 .flex-coloum {
@@ -91,5 +92,26 @@ $color_button: #00BEE8;
         font-weight: 400;
         font-size: 58px;
         line-height: 69px;
+    }
+}
+
+.button-lets-talk{
+    font-family: 'Poppins';
+    position: absolute;
+    margin-left: 53%;
+    top: 60%;
+    z-index: 2;
+    display: flex;
+
+    button{
+        width: 165px;
+        height: 58px;
+        font-size: 23px;
+        font-weight: 400;
+        font-family: 'Poppins';
+        background-color: $color_button;
+        color: white;
+        border-radius: 9px 9px 9px 9px;
+        border: none;
     }
 }

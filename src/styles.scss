@@ -21,6 +21,8 @@ body {
   &::-webkit-scrollbar-thumb:hover {
     background: #00BEE8;
   }
+
+  overflow-x: hidden;
 }
 
 /* poppins-100 - latin */
