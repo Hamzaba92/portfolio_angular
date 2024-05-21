@@ -2,22 +2,53 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
-.background-landing-page{
+.background-landing-page {
     height: 100vh;
     width: 100%;
     background-color: $color_background;
-    img{
+    position: relative;
+    .portrait-container {
+        position: absolute;
+        top: 10px;
+        left: -489px;
+        width: 100%;
+        height: 48%;
+        z-index: 0;
         display: flex;
-        position: relative;
-        margin-bottom: -1738px;
+        justify-content: center;
+        .leftbehindfoto-blue{
+            width: 55%; 
+            height: 100%;
+            position: absolute;
+            left: 13%;
+            top: 15%;
+            transform: rotate(90deg);
+        }
+
+        .rightbehindfoto-turquise{
+            width: 50%; 
+            height: 100%;
+            position: absolute;
+            right: 14%;
+            top: 19%;
+            transform: rotate(66deg);
+            z-index: -1;
+        }
+
+        .portraitfoto {
+            position: relative;
+            height: 610px;
+
+        }
     }
+
 }
 
-.vectorpicture-right-side{
+.vectorpicture-right-side {
     display: flex;
-    img{
+
+    img {
         width: 100%;
         z-index: 1;
     }
 }
-
