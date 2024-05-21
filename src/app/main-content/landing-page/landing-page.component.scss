@@ -109,5 +109,12 @@ $color_button: #00BEE8;
         border: none;
         margin-right: 175px;
         margin-top: 36px;
+
+        &:hover{
+            background-color: $color_violett;
+            scale: 1.2;
+            cursor: pointer;
+            transition: all ease-in-out 0.55s;
+        }
     }
 }
