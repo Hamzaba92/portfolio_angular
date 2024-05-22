@@ -9,6 +9,12 @@ $color_button: #00BEE8;
     display: flex;
 }
 
+.overcontainer{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+}
+
 .left-side {
     position: relative;
     z-index: 51;
@@ -17,7 +23,7 @@ $color_button: #00BEE8;
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
     .about-me-cont {
         min-height: 340px;
@@ -76,3 +82,22 @@ $color_button: #00BEE8;
         }
     }
 }
+
+.right-side {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.blue-smoke {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    z-index: 52;
+    img{
+        height: 430px;
+    }
+}
+
