@@ -6,21 +6,25 @@ $color_button: #00BEE8;
     background-color: $color_background;
     height: calc(100vh - 110px);
     width: 100%;
+    display: flex;
 }
 
 .left-side {
-    position: absolute;
+    position: relative;
     z-index: 51;
     font-family: 'Poppins';
     color: white;
     width: 50%;
-    .about-me-cont{
-        position: absolute;
-        height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .about-me-cont {
+        min-height: 340px;
         width: 480px;
-        left: 100px;
-        top: 125px;
-        .title{
+        margin-left: 100px;
+
+        .title {
             font-size: 76px;
             color: white;
             font-family: 'Poppins';
@@ -29,43 +33,46 @@ $color_button: #00BEE8;
             display: flex;
         }
 
-        .introducing-txt{
+        .introducing-txt {
             height: 120px;
             width: 396px;
             margin-top: 35px;
         }
 
-        .blue-puzzle{
+        .blue-puzzle {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 35px;
             margin-top: 35px;
-            img{
+
+            img {
                 height: 50px;
                 width: 50px;
                 object-fit: contain;
             }
-            span{
+
+            span {
                 height: 86px;
                 width: 396px;
             }
         }
 
-        .blue-lamp{
+        .blue-lamp {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            img{
+
+            img {
                 height: 50px;
                 width: 50px;
                 object-fit: contain;
             }
-            span{
+
+            span {
                 height: 86px;
                 width: 396px;
             }
         }
     }
 }
-
