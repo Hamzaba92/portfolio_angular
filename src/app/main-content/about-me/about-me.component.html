@@ -1,37 +1,63 @@
-<div class="background-about-me">
+<div class="background-about-me" id="anchorabt">
     <div class="blue-smoke">
         <img src="./../../../assets/about-me/blue_smoke.png">
     </div>
 
-<div class="overcontainer">
-    <div class="left-side">
-        <div class="about-me-cont">
-            <span class="title">About me</span>
-            <span class="introducing-txt">
-                Hi, I am a Front-end deverloper based in München, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ut auctor sem non tempus convallis.
-                Integer et justo vitae urna finibus eleifend sit amet porttitor sapien.
-                Donec sollicitudin massa vel lorem vestibulum efficitur. 
-            </span>
+    <div class="overcontainer">
+        <div class="left-side">
+            <div class="about-me-cont">
+                @if (languageService.langDE) {
+                <span class="title">About me</span>
+                <span class="introducing-txt">
+                    "Every problem already has a solution. We just need to find it. [...]"
 
-            <div class="blue-puzzle">
-                <img src="./../../../assets/about-me/blue_puzzle.png">
-                <span>
-                    Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    I'm 32 years old, based near St. Gallen, and I'm experienced at building web applications. I
+                    acquired my
+                    skills through the following training courses:
                 </span>
-            </div>
 
-            <div class="blue-lamp">
-                <img src="./../../../assets/about-me/blue_lamp.png">
-                <span>
-                    Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                <div class="blue-puzzle">
+                    <img src="./../../../assets/about-me/blue_puzzle.png">
+                    <span>
+                        A frontend course at freeCodeCamp.org and a multi-month training session for frontend
+                        development at the German Developer Akademie GmbH.
+                    </span>
+                </div>
+
+                <div class="blue-lamp">
+                    <img src="./../../../assets/about-me/blue_lamp.png">
+                    <span>
+                        There, I was able to expand my tech stack with Angular and TypeScript by working on individual
+                        and group projects.
+                    </span>
+                </div>
+            }@else {
+                <span class="title">Über mich</span>
+                <span class="introducing-txt">
+                    "[...]Für jedes Problem gibt es bereits eine Lösung. Wir müssen sie nur finden.[...]"
+
+                    Hallo! Ich bin H.B, 32 Jahre alt und als Frontend Entwickler bringe ich Projekterfahrung im
+                    Bau von Web-Applikationen mit. Meine Fachkenntnisse habe ich durch zwei Weiterbildungen erworben:
                 </span>
-            </div>
 
+                <div class="blue-puzzle">
+                    <img src="./../../../assets/about-me/blue_puzzle.png">
+                    <span>
+                        Ein Frontend Kurs bei freeCodeCamp.org und bei einer mehrmontatigen Fortbildung zum Frontend
+                        Entwickler bei der Developer Akademie GmbH.
+                    </span>
+                </div>
+
+                <div class="blue-lamp">
+                    <img src="./../../../assets/about-me/blue_lamp.png">
+                    <span>
+                        Dort konnte ich in Einzel- und Gruppenprojekten meinen Tech-Stack unter anderem durch Angular
+                        und TypeScript ergänzen.
+                    </span>
+                </div>
+            }
+            </div>
         </div>
-    </div>
 
         <div class="right-side">
             <div class="about-me-photo-eclips">
@@ -42,4 +68,3 @@
     </div>
 
 </div>
-
