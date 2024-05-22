@@ -13,12 +13,13 @@ $color_button: #00BEE8;
     z-index: 51;
     font-family: 'Poppins';
     color: white;
+    width: 50%;
     .about-me-cont{
         position: absolute;
         height: 340px;
         width: 480px;
         left: 100px;
-        gap: 10px;
+        top: 125px;
         .title{
             font-size: 76px;
             color: white;
@@ -65,7 +66,6 @@ $color_button: #00BEE8;
                 width: 396px;
             }
         }
-
-
     }
 }
+
