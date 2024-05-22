@@ -84,12 +84,6 @@ $color_button: #00BEE8;
     }
 }
 
-.right-side {
-    display: flex;
-    width: 50%;
-
-}
-
 .blue-smoke {
     position: absolute;
     right: 0;
@@ -99,3 +93,27 @@ $color_button: #00BEE8;
     }
 }
 
+.right-side {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    .about-me-photo-eclips{
+        display: flex;
+        
+        align-items: center;
+        z-index: 53;
+
+        img{
+            height: 265px;
+            width: 265px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: #00BEE8 2px solid;
+        }
+        .bar{
+            height: 2px;
+            width: 252px;
+            background-color: $color_button;
+        }
+    }
+}
