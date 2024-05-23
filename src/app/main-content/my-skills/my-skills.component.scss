@@ -5,10 +5,12 @@ $color_button: #00BEE8;
 .background-my-skills {
     height: calc(100vh - 110px);
     background-color: $color_background;
-
+    flex-direction: column;
+    width: 100%;
     .blue-smoke {
         position: relative;
         height: 100%;
+        display: flex;
 
         img {
             display: flex;
@@ -17,22 +19,22 @@ $color_button: #00BEE8;
             position: absolute;
             left: 0;
             transform: translateY(-50%);
-            top: 50%;
+            top: 53%;
             z-index: 1;
         }
     }
 
     .icons {
-        height: 370px;
-        width: 470px;
+        height: 445px;
+        width: 590px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         position: absolute;
         left: 100px;
-        top: 193%;
-        z-index: 1;
+        top: 201%;
+        z-index: 2;
         gap: 20px;
 
         a {
@@ -41,26 +43,89 @@ $color_button: #00BEE8;
             font-family: "Poppins";
             color: $color_violett;
 
-            .added-svg-sass {
-                height: 62px;
-                width: 53px;
+            img {
+                height: 88px;
+                width: 75px;
+                z-index: 2;
             }
 
-            a {
+        }
+
+    }
+
+    .myskills-txt-btn {
+        width: 500px;
+        height: 279px;
+        position: absolute;
+        top: 220%;
+        right: 0;
+        font-family: 'Poppins';
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .undercontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .row-the-content {
                 display: flex;
-                flex-direction: column;
-                font-size: 10px;
-                color: white;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+
+                .myskills-title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    span {
+                        font-size: 74px;
+                        font-weight: 700;
+                        display: flex;
+                        padding-left: 78px;
+                    }
+
+                    .bar {
+                        width: 58px;
+                        height: 2px;
+                        background-color: $color_violett;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+
+                }
+
+            }
+            span{
+                text-align: center;
             }
 
         }
 
-        img {
-            height: 88px;
-            width: 75px;
-            z-index: 2;
+        button {
+            background-color: $color_button;
+            border: none;
+            width: 188px;
+            height: 58px;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            font-size: 23px;
+            margin-top: 25px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            &:hover{
+                background-color: $color_violett;
+                scale: 1.2;
+                cursor: pointer;
+                transition: all ease-in-out 0.55s;
+            }
         }
-
     }
 
 }
@@ -98,3 +163,4 @@ a:hover:after {
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
+

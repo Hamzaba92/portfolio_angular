@@ -1,23 +1,54 @@
-<div class="background-my-skills">
+<audio #hoverAudio preload="auto" src="./../../../assets/myskills/hover_icon_sound.mp3"></audio>
+
+<div class="background-my-skills" id="anchor_myskills">
     <div class="blue-smoke">
         <img src="./../../../assets/myskills/turquise_smoke.png">
     </div>
 
     <div class="icons">
-        
-            <a><img src="./../../../assets/myskills/angular.png"></a>
-            <a><img src="./../../../assets/myskills/javascript.png"></a>
-            <a><img src="./../../../assets/myskills/typescript.png"></a>
-            <a><img src="./../../../assets/myskills/firebase.png"></a>
-            <a><img src="./../../../assets/myskills/scrum.png"></a>
-            <a><img src="./../../../assets/myskills/api.png"></a>
-            <a><img src="./../../../assets/myskills/html.png"></a>
-            <a><img src="./../../../assets/myskills/css.png"></a>
-            <a><img src="./../../../assets/myskills/materialdesign.png"></a>
-            <a><img src="./../../../assets/myskills/git.png"></a>
-
-            
-            
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/angular.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img
+                src="./../../../assets/myskills/javascript.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img
+                src="./../../../assets/myskills/typescript.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img
+                src="./../../../assets/myskills/firebase.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/scrum.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/api.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/html.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/css.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img
+                src="./../../../assets/myskills/materialdesign.png"></a>
+        <a (mouseenter)="playAudio()" (mouseleave)="pauseAudio()"><img src="./../../../assets/myskills/git.png"></a>
     </div>
+    @if (languageService.langDE) {
+    <div class="myskills-txt-btn">
+        <div class="undercontainer">
+            <div class="row-the-content">
+                <div class="myskills-title">
+                    <span>My skills</span>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <span>I have grown my frontend developments skills that have allowed me to create different real
+                projects.</span>
+        </div>
+        <button>Get in touch</button>
+    </div>
+    }@else {
 
+    <div class="myskills-txt-btn">
+        <div class="undercontainer">
+            <div class="row-the-content">
+                <div class="myskills-title">
+                    <span>My skills</span>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <span>Ich habe meine Fähigkeiten in der Frontend-Entwicklung durch die Nutzung der aufgelisteten Skills
+                erweitert, was mir ermöglicht hat, verschiedene reale Projekte zu erstellen.</span>
+        </div>
+        <button>Kontakt</button>
+    </div>
+    }
 </div>
