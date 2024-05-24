@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
 import { AboutMeComponent } from './main-content/about-me/about-me.component';
 import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
-
+import * as AOS from 'aos';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,6 +13,23 @@ import { MySkillsComponent } from './main-content/my-skills/my-skills.component'
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio_angular';
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
+
+  }
+
+
+
+
+
+
+
 }

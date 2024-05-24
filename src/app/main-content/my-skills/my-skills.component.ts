@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild, inject } from '@angular/core';
+import { Component, ElementRef, NgModule, Renderer2, ViewChild, AfterViewInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LanguageService } from '../../language.service';
@@ -12,10 +12,16 @@ import { LanguageService } from '../../language.service';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+ 
+
+
+
+  constructor(){}
 
   languageService = inject(LanguageService)
 
   @ViewChild('hoverAudio') hoverAudio!: ElementRef<HTMLAudioElement>;
+
 
   playAudio(): void {
     this.hoverAudio.nativeElement.play();
@@ -26,6 +32,16 @@ export class MySkillsComponent {
     audio.pause();
     audio.currentTime = 0;
   }
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
