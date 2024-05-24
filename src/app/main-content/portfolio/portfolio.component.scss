@@ -5,6 +5,123 @@ $color_button: #00BEE8;
 .background-portfolio{
     height: calc(100vh - 115px);
     background-color: $color_background;
+    .overcontainer{
+        .header{
+            width: 100%;
+            .title{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 25px;
+                .left-bar{
+                width: 219px;
+                height: 2px;
+                background-color: $color_violett;
+                }
+                span{
+                    font-family: 'Poppins';
+                    font-size: 74px;
+                    color: white;
+                    font-weight: 700;
+                }
+                .right-bar{
+                    height: 2px;
+                    width: 484px;
+                    background-color: $color_violett;
+                }
+            }
+          p{
+            margin: 0;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 16px;
+            font-family: 'Poppins';
+            margin-right: 185px;
+          }  
+        }
+    }
 
+}
 
+.projects{
+    font-family: 'Poppins';
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .join-conti{
+        height: 340px;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left-img{
+            img{
+                height: 280px;
+                width: auto;
+            }
+        }
+        .github-livetest{
+            width: 500px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .join{
+                color:$color_violett;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            .over-description{
+                font-size: 19px;
+                color: $color_button;
+                font-weight: 400;
+            }
+
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 2px;
+            }
+            .buttons{
+                display: flex;
+                justify-content: flex-start;
+                gap: 35px;
+                .live-btn{
+                    background-color: $color_violett;
+                    color: white;
+                    border: none;
+                    border-radius: 10px 10px 10px 10px;
+                    height: 50px;
+                    width: 138px;
+                    font-family: 'Poppins';
+                    font-size: 20px;
+                    &:hover{
+                        background-color:$color_button;
+                        cursor: pointer;
+                    }
+                }
+
+                .github-btn{
+                    color: white;
+                    background-color: $color_background;
+                    border: solid 1px $color_button;
+                    border-radius: 10px 10px 10px 10px;
+                    height: 50px;
+                    width: 138px;
+                    font-family: 'Poppins';
+                    font-size: 20px;
+                    &:hover{
+                        background-color: $color_button;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
 }

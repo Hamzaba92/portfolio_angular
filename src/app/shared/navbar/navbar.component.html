@@ -30,8 +30,8 @@
             }@else{
                 <a [ngClass]="{'clicked': languageService.aboutme}" id="aboutme" (click)="languageService.clickedLink('aboutme')" href="#anchorabt">Über mich</a>
                 <a [ngClass]="{'clicked': languageService.skills}" id="skills" (click)="languageService.clickedLink('skills')" href="#anchor_myskills">Skills</a>
-                <a [ngClass]="{'clicked': languageService.portfolio}" href="#anchor_portfolio" id="portfolio"
-                    (click)="languageService.clickedLink('portfolio')">Portfolio</a>
+                <a [ngClass]="{'clicked': languageService.portfolio}" href="#anchor_portfolio" id="portfolio" (click)="languageService.clickedLink('portfolio')">Portfolio</a>
+                    
             }
         </div>
     </nav>
