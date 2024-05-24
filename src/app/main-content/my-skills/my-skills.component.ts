@@ -13,7 +13,7 @@ import { LanguageService } from '../../language.service';
 })
 export class MySkillsComponent {
  
-
+  private audioInitialized = false;
 
 
   constructor(){}
@@ -22,18 +22,40 @@ export class MySkillsComponent {
 
   @ViewChild('hoverAudio') hoverAudio!: ElementRef<HTMLAudioElement>;
 
+  
+
+  
+  initializeAudio(): void {
+    if (!this.audioInitialized) {
+      this.audioInitialized = true;
+      this.hoverAudio.nativeElement.play().then(() => {
+        this.hoverAudio.nativeElement.pause();
+        this.hoverAudio.nativeElement.currentTime = 0;
+      }).catch(error => {
+        console.error('Audio initialization failed:', error);
+      });
+    }
+  }
 
   playAudio(): void {
-    this.hoverAudio.nativeElement.play();
+    if (this.audioInitialized) {
+      this.hoverAudio.nativeElement.play().catch(error => {
+        console.error('Play failed:', error);
+      });
+    } else {
+      this.initializeAudio();
+      setTimeout(() => this.playAudio(), 100); 
+    }
   }
+
 
   pauseAudio(): void {
-    const audio = this.hoverAudio.nativeElement;
-    audio.pause();
-    audio.currentTime = 0;
+    if (this.audioInitialized) {
+      const audio = this.hoverAudio.nativeElement;
+      audio.pause();
+      audio.currentTime = 0;
+    }
   }
-
-
 
 
 

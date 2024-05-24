@@ -6,10 +6,11 @@ import { AboutMeComponent } from './main-content/about-me/about-me.component';
 import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
 import * as AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
+import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, AboutMeComponent, RouterLink, MySkillsComponent],
+  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
