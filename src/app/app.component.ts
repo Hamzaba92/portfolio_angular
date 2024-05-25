@@ -7,10 +7,11 @@ import { MySkillsComponent } from './main-content/my-skills/my-skills.component'
 import * as AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
+import { ContactMeComponent } from './main-content/contact-me/contact-me.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent],
+  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent, ContactMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

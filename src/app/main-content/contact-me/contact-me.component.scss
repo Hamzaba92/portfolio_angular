@@ -1,0 +1,196 @@
+$color_background: #141D2F;
+$color_violett: #4B47FF;
+$color_button: #00BEE8;
+
+
+.background-contact-me {
+    height: 120vh;
+    background-color: $color_background;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 115px;
+        gap: 35px;
+
+        .left-bar {
+            height: 2px;
+            width: 50px;
+            background-color: #4B47FF;
+        }
+
+        span {
+            font-family: 'Poppins';
+            color: white;
+            font-size: 74px;
+            font-weight: 700;
+        }
+    }
+
+    .left-side {
+        width: 50vw;
+        display: flex;
+
+        .left-side-txt {
+            margin-top: 60px;
+
+            .subtitle {
+                font-size: 32px;
+                font-weight: 700;
+                font-family: 'Poppins';
+                color: white;
+                margin-left: 89px;
+                height: 38px;
+                width: 473px;
+                font-family: 'Poppins';
+            }
+
+            .first {
+                width: 473px;
+                height: 57px;
+                color: white;
+                font-family: 'Poppins';
+                margin-left: 89px;
+                font-size: 16px;
+            }
+
+            .second {
+                width: 473px;
+                height: 57px;
+                color: white;
+                font-family: 'Poppins';
+                margin-left: 89px;
+                font-size: 16px;
+                margin-top: 32px;
+            }
+        }
+    }
+
+    .right-side {
+        width: 50vw;
+        display: flex;
+
+        .overcontainer {
+            width: 490px;
+            height: 350px;
+            display: flex;
+            font-family: 'Poppins';
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+                height: 500px;
+                align-items: center;
+
+                button{
+                    width: 182px;
+                    height: 56px;
+                    background-color: #00BEE8;
+                    color: white;
+                    font-family: 'Poppins';
+                    border: none;
+                    border-radius: 10px 10px 10px 10px;
+                    font-size: 18px;
+                }
+
+                input {
+                    width: 435px;
+                    height: 38px;
+                    color: white;
+                    padding: 10px 10px 10px 15px;
+                    font-family: 'Poppins';
+                    background-color: $color_background;
+                    border-color: $color_violett;
+                    border-radius: 10px 10px 10px 10px;
+
+                    &:hover {
+                        border-color: #00BEE8;
+                        cursor: pointer;
+                    }
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                textarea {
+                    width: 464px;
+                    box-sizing: border-box;
+                    resize: none;
+                    padding: 15px 10px 10px 15px;
+                    min-height: 124px;
+                    font-family: 'Poppins';
+                    background-color: $color_background;
+                    border-color: $color_violett;
+                    border-radius: 10px 10px 10px 10px;
+
+                    &:hover {
+                        border-color: #00BEE8;
+                        cursor: pointer;
+                    }
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                .checkbox-cont {
+                    display: flex;
+                    width: 464px;
+                    color: white;
+                    align-items: center;
+                    column-gap: 5px;
+                   
+                    a{
+                        text-decoration: none;
+                        color: #4B47FF;
+                        &:hover{
+                            text-decoration: underline $color_violett;
+                        }
+                    }
+                    span{
+                        font-size: 10px;
+                    }
+
+                    input {
+                        height: 8px;
+                        width: 8px;
+                        appearance: none;
+                        outline: 1px solid $color_button;
+                        border: 1px solid $color_button;
+                        border-radius: 5px;
+                        position: relative;
+                        cursor: pointer;
+
+                        &:checked {
+                            background-color: $color_button;
+                        }
+
+                        &:checked::after {
+                            content: '';
+                            position: absolute;
+                            left: 9px;
+                            top: 1px;
+                            width: 5px;
+                            height: 12px;
+                            border: solid white;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+.content-container {
+    display: flex;
+    width: 100vw;
+}
