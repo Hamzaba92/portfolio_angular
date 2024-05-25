@@ -12,4 +12,15 @@ import { LanguageService } from '../../language.service';
 export class PortfolioComponent {
 
   languageService = inject(LanguageService);
+
+
+  buttonText: string = "Live Test";
+
+  changeText(){
+    this.buttonText = "On Air";
+  }
+
+  resetText(){
+    this.buttonText = "Live Test";
+  }
 }

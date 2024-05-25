@@ -62,7 +62,7 @@
                 <p>Built with Angular, this modern, responsive, and visually appealing portfolio site effectively
                     showcases projects and skills with a smooth user experience and interactive features.</p>
                 <div class="buttons">
-                    <button class="live-btn">On Air</button>
+                    <button class="live-btn">Live Test</button>
                     <button class="github-btn">Github</button>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                     Mit Angular entwickelt, präsentiert diese moderne, reaktionsschnelle und visuell ansprechende Portfolio-Website effektiv Projekte und Fähigkeiten und bietet eine reibungslose Benutzererfahrung sowie interaktive Funktionen.
                 </p>
                 <div class="buttons">
-                    <button class="live-btn">On Air</button>
+                    <button (mouseover)="changeText()" (mouseout)="resetText()" class="live-btn">{{ buttonText }}</button>
                     <button class="github-btn">Github</button>
                 </div>
             </div>

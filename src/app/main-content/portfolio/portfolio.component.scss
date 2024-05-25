@@ -320,10 +320,13 @@ $color_button: #00BEE8;
                 font-family: 'Poppins';
                 font-size: 20px;
 
-                &:hover {
+                &:hover{
                     background-color: $color_button;
                     cursor: pointer;
+         
                 }
+          
+              
             }
 
             .github-btn {
