@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { LanguageService } from '../../language.service';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -11,4 +11,5 @@ import { FormsModule } from '@angular/forms';
 })
 export class PortfolioComponent {
 
+  languageService = inject(LanguageService);
 }
