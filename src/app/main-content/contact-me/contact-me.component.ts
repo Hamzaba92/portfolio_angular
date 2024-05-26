@@ -13,5 +13,35 @@ import { MySkillsComponent } from '../my-skills/my-skills.component';
 export class ContactMeComponent {
 languageService = inject(LanguageService);
 
+checkbox: boolean = false;
+errorMsgPrivacy: boolean = false;
+isCheckboxChecked: boolean = false;
+
+
+
+
+
+  
+
+  acceptCheckbox(){
+    if(this.checkbox){
+      this.checkbox = false
+    }
+    else{
+      this.checkbox = true
+    }
+    this.isCheckboxChecked = !this.isCheckboxChecked;
+  }
+
+
+    sendForm(){
+      if (this.checkbox) {
+        this.errorMsgPrivacy = true;
+      } else {
+        this.errorMsgPrivacy = false;
+      }
+    }
+
+  
 
 }

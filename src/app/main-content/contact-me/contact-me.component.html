@@ -1,4 +1,5 @@
 <main class="background-contact-me" id="anchor_contact_me">
+    @if (languageService.langDE) {
     <header data-aos="fade-right" data-aos-duration="1500">
         <div class="left-bar"></div>
         <span>Contact</span>
@@ -8,7 +9,8 @@
         <aside class="left-side">
             <div class="left-side-txt" data-aos="fade-right" data-aos-duration="1500">
                 <span class="subtitle">Got a problem to solve?</span>
-                <p class="first">Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
+                <p class="first">Contact me through this form, I am interested in hearing from you, knowing your ideas
+                    and contributing to your projects with my work.</p>
                 <p class="second">Need a Frontend developer? <b>Contact me!</b></p>
             </div>
         </aside>
@@ -20,18 +22,65 @@
                     <input type="text" placeholder="Your email">
                     <textarea style="height: 104px" type="text" placeholder="Your message"></textarea>
                     <div class="checkbox-cont">
-                        <input type="checkbox">
-                        <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</span>
-                    </div>
-                    <button>Send message</button>
-                    
+                        @if (checkbox) {   
+                            <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
+                            }@else {
+                                
+                            <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
+                            } 
+                            <span>Ich habe die <a href="#">Datenschutzbestimmung</a> gelesen und stimme der verarbeitung zu.</span>
+                            </div>
+                            <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Please accept the privacy policy.</span>
+                        
+                            <button class="send-btn" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Send message</button>
+        
                 </form>
                 <img onclick="location.href='#'" src="./../../../assets/go_up_button.png">
             </div>
         </aside>
     </div>
+    }@else {
+    <header data-aos="fade-right" data-aos-duration="1500">
+        <div class="left-bar"></div>
+        <span>Kontakt</span>
+    </header>
 
+    <div class="content-container">
+        <aside class="left-side">
+            <div class="left-side-txt" data-aos="fade-right" data-aos-duration="1500">
+                <span class="subtitle">Suchen Sie nach einer Lösung für ein Problem?</span>
+                <p class="first">Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.</p>
+                <p class="second">Benötigen Sie einen Frontend-Entwickler? Treten Sie mit mir in Kontakt!</p>
+            </div>
+        </aside>
+
+        <aside class="right-side">
+            <div class="overcontainer">
+                <form>
+                    <input type="text" placeholder="Dein Name">
+                    <input type="text" placeholder="E-mail">
+                    <textarea style="height: 104px" type="text" placeholder="Deine Nachricht an mich"></textarea>
+                    <div class="checkbox-cont">
+                     @if (checkbox) {   
+                    <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
+                     }@else {
+                        
+                    <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
+                     } 
+                    <span>Ich habe die <a href="#">Datenschutzbestimmung</a> gelesen und stimme der verarbeitung zu.</span>
+                    </div>
+                    <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
+                
+                    <button class="send-btn" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
+
+                </form>
+                <img onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+            </div>
+        </aside>
+    </div>
+
+    }
     <div class="blue-smoke-left">
-        <img src="./../../../assets/blue_smoke_contact_me.png">
+        <img src="./../../../assets/contactme/blue_smoke_contact_me.png">
     </div>
 </main>

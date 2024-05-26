@@ -32,18 +32,18 @@ $color_button: #00BEE8;
         width: 50vw;
         display: flex;
         z-index: 1;
+        flex-direction: column;
         .left-side-txt {
             margin-top: 60px;
-
             .subtitle {
                 font-size: 32px;
                 font-weight: 700;
                 font-family: 'Poppins';
                 color: white;
-                margin-left: 89px;
-                height: 38px;
-                width: 473px;
-                font-family: 'Poppins';
+                padding-left: 89px;
+                max-width: 473px;
+                min-height: 48px;
+                display: flex;
             }
 
             .first {
@@ -53,6 +53,8 @@ $color_button: #00BEE8;
                 font-family: 'Poppins';
                 margin-left: 89px;
                 font-size: 16px;
+                max-width: 473px;
+                min-height: 48px;
             }
 
             .second {
@@ -63,6 +65,8 @@ $color_button: #00BEE8;
                 margin-left: 89px;
                 font-size: 16px;
                 margin-top: 32px;
+                max-width: 473px;
+                min-height: 48px;
             }
         }
     }
@@ -70,7 +74,7 @@ $color_button: #00BEE8;
     .right-side {
         width: 50vw;
         display: flex;
-
+        justify-content: center;
         .overcontainer {
             width: 490px;
             height: 350px;
@@ -108,6 +112,9 @@ $color_button: #00BEE8;
                     border: none;
                     border-radius: 10px 10px 10px 10px;
                     font-size: 18px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
 
                 input:-webkit-autofill,
@@ -186,6 +193,12 @@ $color_button: #00BEE8;
                     align-items: center;
                     column-gap: 5px;
 
+                    img{
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                    }
+
                     a {
                         text-decoration: none;
                         color: #4B47FF;
@@ -199,32 +212,6 @@ $color_button: #00BEE8;
                         font-size: 10px;
                     }
 
-                    input {
-                        height: 8px;
-                        width: 8px;
-                        appearance: none;
-                        outline: 1px solid $color_button;
-                        border: 1px solid $color_button;
-                        border-radius: 5px;
-                        position: relative;
-                        cursor: pointer;
-
-                        &:checked {
-                            background-color: $color_button;
-                        }
-
-                        &:checked::after {
-                            content: '';
-                            position: absolute;
-                            left: 9px;
-                            top: 1px;
-                            width: 5px;
-                            height: 12px;
-                            border: solid white;
-                            border-width: 0 2px 2px 0;
-                            transform: rotate(45deg);
-                        }
-                    }
 
                 }
             }
@@ -247,3 +234,19 @@ $color_button: #00BEE8;
     display: flex;
     width: 100vw;
 }
+
+.d-none{
+    display: none;
+}
+
+#errorPrivacy{
+    font-size: 10px;
+    color: red;
+    font-family: 'Poppins';
+    margin-top: -5px;
+}
+
+.send-btn{
+    opacity: 0.4!important;
+}
+
