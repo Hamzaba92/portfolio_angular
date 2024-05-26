@@ -8,10 +8,13 @@ import * as AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ContactMeComponent } from './main-content/contact-me/contact-me.component';
+import { FooterComponent } from './shared/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent, ContactMeComponent],
+  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, 
+  AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
+   ContactMeComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

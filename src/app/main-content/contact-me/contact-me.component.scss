@@ -76,6 +76,20 @@ $color_button: #00BEE8;
             height: 350px;
             display: flex;
             font-family: 'Poppins';
+            flex-direction: column;
+            align-items: end;
+
+            img {
+                height: 39px;
+                width: 39px;
+                object-fit: contain;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $color_violett;
+                    border-radius: 50%;
+                }
+            }
 
             form {
                 display: flex;
@@ -85,7 +99,7 @@ $color_button: #00BEE8;
                 height: 500px;
                 align-items: center;
 
-                button{
+                button {
                     width: 182px;
                     height: 56px;
                     background-color: #00BEE8;
@@ -96,15 +110,37 @@ $color_button: #00BEE8;
                     font-size: 18px;
                 }
 
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                    -webkit-box-shadow: 0 0 0px 1000px #141D2F inset;
+                    box-shadow: 0 0 0px 1000px #141D2F inset;
+                    background-color: #141D2F;
+                    color: white;
+                }
+
                 input {
                     width: 435px;
                     height: 38px;
-                    color: white;
+                    color: white !important;
                     padding: 10px 10px 10px 15px;
                     font-family: 'Poppins';
                     background-color: $color_background;
                     border-color: $color_violett;
                     border-radius: 10px 10px 10px 10px;
+
+                    &::-webkit-autofill:focus,
+                    :-webkit-autofill:hover,
+                    :-webkit-autofill:focus,
+                    :-webkit-autofill:active {
+                        background-color: #141D2F !important;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        caret-color: #4B47FF;
+                    }
 
                     &:hover {
                         border-color: #00BEE8;
@@ -126,6 +162,12 @@ $color_button: #00BEE8;
                     background-color: $color_background;
                     border-color: $color_violett;
                     border-radius: 10px 10px 10px 10px;
+                    color: white;
+
+                    &:focus {
+                        outline: none;
+                        caret-color: #4B47FF;
+                    }
 
                     &:hover {
                         border-color: #00BEE8;
@@ -143,15 +185,17 @@ $color_button: #00BEE8;
                     color: white;
                     align-items: center;
                     column-gap: 5px;
-                   
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: #4B47FF;
-                        &:hover{
+
+                        &:hover {
                             text-decoration: underline $color_violett;
                         }
                     }
-                    span{
+
+                    span {
                         font-size: 10px;
                     }
 
