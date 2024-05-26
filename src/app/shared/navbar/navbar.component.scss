@@ -23,6 +23,9 @@ $hover_color: #00BEE8;
     z-index: 1000;
     background-color: rgba(20, 29, 47, 1);
     height: 110px;
+    a{
+        text-decoration: none;
+    }
 }
 
 .logo {
@@ -32,6 +35,8 @@ $hover_color: #00BEE8;
     justify-content: center;
     align-items: center;
     margin-left: 24px;
+    
+
 }
 
 .right-section {

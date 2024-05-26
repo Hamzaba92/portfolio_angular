@@ -31,7 +31,7 @@ $color_button: #00BEE8;
     .left-side {
         width: 50vw;
         display: flex;
-
+        z-index: 1;
         .left-side-txt {
             margin-top: 60px;
 
@@ -232,6 +232,15 @@ $color_button: #00BEE8;
 
     }
 
+    .blue-smoke-left{
+        position: absolute;
+        left: 0;
+        top: 534.6%;
+        img{
+            height: 524px;
+            width: 438px;
+        }
+    }
 }
 
 .content-container {
