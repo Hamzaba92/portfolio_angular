@@ -10,7 +10,7 @@ $color_button: #00BEE8;
 
     .portrait-container {
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: -25px;
         width: 50%;
         height: 35%;
@@ -19,19 +19,19 @@ $color_button: #00BEE8;
         justify-content: center;
 
         .leftbehindfoto-blue {
-            width: 55%;
-            height: 100%;
+            width: 89%;
+            height: 118%;
             position: absolute;
-            left: 13%;
-            top: 15%;
-            transform: rotate(90deg);
+            left: -16%;
+            top: 57%;
+            transform: rotate(91deg);
         }
 
         .rightbehindfoto-turquise {
-            width: 50%;
-            height: 100%;
+            width: 69%;
+            height: 170%;
             position: absolute;
-            right: 14%;
+            right: 5%;
             top: 19%;
             transform: rotate(66deg);
             z-index: -1;
@@ -47,7 +47,6 @@ $color_button: #00BEE8;
 
 .vectorpicture-right-side {
     display: flex;
-
     img {
         width: 100%;
         z-index: 1;
