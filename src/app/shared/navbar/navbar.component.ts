@@ -17,6 +17,6 @@ export class NavbarComponent {
 
   constructor(public languageService: LanguageService) { }
 
-
+  burgerMenu: boolean = false;
 
 }

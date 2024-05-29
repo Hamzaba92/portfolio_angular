@@ -1,0 +1,32 @@
+    .right-section{
+    padding-right: 30px;
+}
+
+
+.burger{
+    display: none;
+    background-image: url(./../../../assets/mobile/burger\ menu.png);
+    height: 50px;
+    width: 50px;
+}
+
+
+@media (max-width: 650px) {
+    .right-section{
+      gap: 10px!important;
+      justify-content: flex-end;
+      
+    }
+}
+
+
+@media (max-width: 500px) {
+    .right-section{
+        display: none!important;
+    }
+
+    .burger{
+        display: block;
+    }
+
+}

@@ -2,6 +2,8 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
+@import './mediaquery.footer.scss';
+
 footer{
     width: 100%;
     height: 200px;
