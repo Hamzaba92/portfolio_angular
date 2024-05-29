@@ -1,0 +1,77 @@
+$color_background: #141D2F;
+$color_violett: #4B47FF;
+$color_button: #00BEE8;
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #141D2F;
+}
+
+.wrapperPrivacy {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+}
+
+p {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;    
+    font-size: 14px;
+    line-height: 17px;
+}
+
+h1 {
+    color: $color_button;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 27.6px;
+    font-size: 23px;
+}
+
+h2 {
+    color: $color_violett;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+h3 {
+    color: #00BEE8;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+strong {
+    
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.impressum {
+    height: max-content;
+    text-wrap: wrap;
+    overflow-y: scroll;
+    padding-left: 43px;
+    padding-right: 32px;
+    padding-bottom: 5%;
+    padding-top: 148px;
+}
+
+::-webkit-scrollbar {
+    overflow-y: hidden;
+}
+

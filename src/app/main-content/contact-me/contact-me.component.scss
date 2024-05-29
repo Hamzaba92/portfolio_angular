@@ -198,6 +198,9 @@ $color_button: #00BEE8;
                         height: 20px;
                         width: 20px;
                         object-fit: contain;
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
 
                     a {
@@ -249,6 +252,15 @@ $color_button: #00BEE8;
 
 .send-btn{
     opacity: 0.4!important;
+}
+
+.click-effect{
+    transition: all 0.1s ease-in-out;
+    &:active, :focus{
+        transform: translateY(2px);
+        box-shadow: 0 3px #666;
+        background-color: $color_button;
+    }
 }
 
 
@@ -328,5 +340,10 @@ $color_button: #00BEE8;
     height: 22px;
   }
 
+  .success-message{
+    font-family: 'Poppins';
+    color: rgb(164, 235, 59);
+    font-weight: 500;
 
+  }
   

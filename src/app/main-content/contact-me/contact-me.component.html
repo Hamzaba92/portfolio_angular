@@ -18,54 +18,41 @@
         <aside class="right-side">
             <div class="overcontainer">
 
-                <form  #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-                    <div class="inputfieldName">   
-                        <input id="input_name" type="text" placeholder="Your name" [(ngModel)]="contactData.name"
-                        [ngModelOptions]="{standalone: true}" required 
-                        [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
-                        <img class="validation-icon" [ngClass]="{'d-none': !isNameValid || !contactData.name}" src="./../../../assets/contactme/successSymbol.png">
-                        <img class="validation-icon" [ngClass]="{'d-none': isNameValid || !contactData.name}" src="./../../../assets/contactme/errorSymbol.png">
+                <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                    <div class="inputfieldName">
+                      <input required id="input_name" type="text" placeholder="Your Name" [(ngModel)]="contactData.name" name="name" [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
+                      <img class="validation-icon" [ngClass]="{'d-none': !isNameValid || !contactData.name}" src="./../../../assets/contactme/successSymbol.png">
+                      <img class="validation-icon" [ngClass]="{'d-none': isNameValid || !contactData.name}" src="./../../../assets/contactme/errorSymbol.png">
                     </div>
-                    <span id="errorName" 
-                    [ngClass]="{'d-none': isNameValid || !contactData.name}">
-                    Your name is required
-                    </span>
+                    <span id="errorName" [ngClass]="{'d-none': isNameValid || !contactData.name}">Your Name is required</span>
 
                     <div class="inputfieldEmail">
-                        <input id="input_email" type="text" placeholder="Your email" [(ngModel)]="contactData.email"
-                        [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" [ngModelOptions]="{standalone: true}" required (input)="validateEmail()">
-                        <img class="validation-icon" [ngClass]="{'d-none': !successImgEmail || !contactData.email}"  src="./../../../assets/contactme/successSymbol.png">
+                        <input required id="input_email" type="email" placeholder="E-mail" [(ngModel)]="contactData.email" name="email" [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" (input)="validateEmail()">
+                        <img class="validation-icon" [ngClass]="{'d-none': !successImgEmail || !contactData.email}" src="./../../../assets/contactme/successSymbol.png">
                         <img class="validation-icon" [ngClass]="{'d-none': successImgEmail || !contactData.email}" src="./../../../assets/contactme/errorSymbol.png">
-                    </div>
-                    <span id="errorEmail" 
-                    [ngClass]="{'d-none': isEmailValid || !contactData.email}">
-                    Your email is required (e.g. example&#64;domain.com)
-                    </span>
+                      </div>
+                      <span id="errorEmail" [ngClass]="{'d-none': isEmailValid || !contactData.email}">Your Email is required (e.g. example&#64;domain.com)</span>
+
 
                     <div class="inputfieldMessage">
-                    <textarea style="height: 104px" type="text" placeholder="Your message" [(ngModel)]="contactData.message"
-                     [ngModelOptions]="{standalone: true}" required (input)="validateMessage()"
-                     [ngClass]="{'border-green-success': borderGreenMessage, 'border-red-fail': borderRedMessage}"></textarea>
-                    <img class="last-child-icon" [ngClass]="{'d-none': !successImgMessage || !contactData.message}" src="./../../../assets/contactme/successSymbol.png">
-                    <img class="last-child-icon" [ngClass]="{'d-none': successImgMessage || !contactData.message}" src="./../../../assets/contactme/errorSymbol.png">
+                        <textarea required style="height: 104px" placeholder="Your message to me" [(ngModel)]="contactData.message" name="message" (input)="validateMessage()" [ngClass]="{'border-green-success': borderGreenMessage, 'border-red-fail': borderRedMessage}"></textarea>
+                        <img class="last-child-icon" [ngClass]="{'d-none': !successImgMessage || !contactData.message}" src="./../../../assets/contactme/successSymbol.png">
+                        <img class="last-child-icon" [ngClass]="{'d-none': successImgMessage || !contactData.message}" src="./../../../assets/contactme/errorSymbol.png">
                     </div>
-                    <span id="errorMessage" 
-                    [ngClass]="{'d-none': isMessageValid || !contactData.message}">
-                    Your message is empty or has less than 4 characters
-                    </span>
+                    <span id="errorMessage" [ngClass]="{'d-none': isMessageValid || !contactData.message}">Your message is empty or has fewer than 4 characters.</span>
 
                     <div class="checkbox-cont">
-                        @if (checkbox) {   
-                            <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
-                            }@else {
-                                
-                            <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
-                            } 
-                            <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</span>
-                            </div>
-                            <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Please accept the privacy policy.</span>
-                        
-                            <button class="send-btn" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Send message</button>
+                        <img *ngIf="checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
+                        <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
+                        <span>I've read the<a href="privacy-policy">privacy-policy</a> gelesen und stimme der Verarbeitung zu.</span>
+                      </div>
+                      <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">and agree to the processing of my data as outlined.</span>
+                
+                      <div *ngIf="successMessage" class="success-message">
+                        {{ successMessage }}
+                      </div>
+
+                    <button type="submit" class="send-btn click-effect" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
                 </form>
                 <img onclick="location.href='#'" src="./../../../assets/go_up_button.png">
             </div>
@@ -80,70 +67,57 @@
     <div class="content-container">
         <aside class="left-side">
             <div class="left-side-txt" data-aos="fade-right" data-aos-duration="1500">
-                <span class="subtitle">Suchen Sie nach einer Lösung für ein Problem?</span>
-                <p class="first">Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.</p>
-                <p class="second">Benötigen Sie einen Frontend-Entwickler? Treten Sie mit mir in Kontakt!</p>
+                <span class="subtitle">Haben Sie ein Problem, für das Sie eine Lösung suchen?</span>
+                <p class="first">Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.</p>
+                <p class="second">Benötigen Sie einen erfahrenen Frontend-Entwickler?</p>
             </div>
         </aside>
 
         <aside class="right-side">
             <div class="overcontainer">
 
-                <form  #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-                    <div class="inputfieldName">   
-                        <input id="input_name" type="text" placeholder="Dein Name" [(ngModel)]="contactData.name"
-                        [ngModelOptions]="{standalone: true}" required 
-                        [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
-                        <img class="validation-icon" [ngClass]="{'d-none': !isNameValid || !contactData.name}" src="./../../../assets/contactme/successSymbol.png">
-                        <img class="validation-icon" [ngClass]="{'d-none': isNameValid || !contactData.name}" src="./../../../assets/contactme/errorSymbol.png">
+                <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                    <div class="inputfieldName">
+                      <input required id="input_name" type="text" placeholder="Dein Name" [(ngModel)]="contactData.name" name="name" [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
+                      <img class="validation-icon" [ngClass]="{'d-none': !isNameValid || !contactData.name}" src="./../../../assets/contactme/successSymbol.png">
+                      <img class="validation-icon" [ngClass]="{'d-none': isNameValid || !contactData.name}" src="./../../../assets/contactme/errorSymbol.png">
                     </div>
-                    <span id="errorName" 
-                    [ngClass]="{'d-none': isNameValid || !contactData.name}">
-                    Ihr Name wird benötigt
-                    </span>
+                    <span id="errorName" [ngClass]="{'d-none': isNameValid || !contactData.name}">Ihr Name wird benötigt</span>
 
                     <div class="inputfieldEmail">
-                        <input id="input_email" type="text" placeholder="E-mail" [(ngModel)]="contactData.email"
-                        [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" [ngModelOptions]="{standalone: true}" required (input)="validateEmail()">
-                        <img class="validation-icon" [ngClass]="{'d-none': !successImgEmail || !contactData.email}"  src="./../../../assets/contactme/successSymbol.png">
+                        <input required id="input_email" type="email" placeholder="E-mail" [(ngModel)]="contactData.email" name="email" [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" (input)="validateEmail()">
+                        <img class="validation-icon" [ngClass]="{'d-none': !successImgEmail || !contactData.email}" src="./../../../assets/contactme/successSymbol.png">
                         <img class="validation-icon" [ngClass]="{'d-none': successImgEmail || !contactData.email}" src="./../../../assets/contactme/errorSymbol.png">
-                    </div>
-                    <span id="errorEmail" 
-                    [ngClass]="{'d-none': isEmailValid || !contactData.email}">
-                    Ihre E-Mail wird benötigt (z.B. muster&#64;domain.com)
-                    </span>
+                      </div>
+                      <span id="errorEmail" [ngClass]="{'d-none': isEmailValid || !contactData.email}">Ihre E-Mail wird benötigt (z.B. muster&#64;domain.com)</span>
+
 
                     <div class="inputfieldMessage">
-                    <textarea style="height: 104px" type="text" placeholder="Deine Nachricht an mich" [(ngModel)]="contactData.message"
-                     [ngModelOptions]="{standalone: true}" required (input)="validateMessage()"
-                     [ngClass]="{'border-green-success': borderGreenMessage, 'border-red-fail': borderRedMessage}"></textarea>
-                    <img class="last-child-icon" [ngClass]="{'d-none': !successImgMessage || !contactData.message}" src="./../../../assets/contactme/successSymbol.png">
-                    <img class="last-child-icon" [ngClass]="{'d-none': successImgMessage || !contactData.message}" src="./../../../assets/contactme/errorSymbol.png">
+                        <textarea required style="height: 104px" placeholder="Deine Nachricht an mich" [(ngModel)]="contactData.message" name="message" (input)="validateMessage()" [ngClass]="{'border-green-success': borderGreenMessage, 'border-red-fail': borderRedMessage}"></textarea>
+                        <img class="last-child-icon" [ngClass]="{'d-none': !successImgMessage || !contactData.message}" src="./../../../assets/contactme/successSymbol.png">
+                        <img class="last-child-icon" [ngClass]="{'d-none': successImgMessage || !contactData.message}" src="./../../../assets/contactme/errorSymbol.png">
                     </div>
-                    <span id="errorMessage" 
-                    [ngClass]="{'d-none': isMessageValid || !contactData.message}">
-                    Ihre Nachricht ist leer oder hat weniger als 4 Buchstaben
-                    </span>
+                    <span id="errorMessage" [ngClass]="{'d-none': isMessageValid || !contactData.message}">Ihre Nachricht ist leer oder hat weniger als 4 Buchstaben</span>
 
                     <div class="checkbox-cont">
-                     @if (checkbox) {   
-                    <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
-                     }@else {
-                    <img (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
-                     } 
-                    <span>Ich habe die <a href="#">Datenschutzbestimmung</a> gelesen und stimme der verarbeitung zu.</span>
-                    </div>
-                    <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
+                        <img *ngIf="checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
+                        <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
+                        <span>Ich habe die <a href="privacy-policy">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung zu.</span>
+                      </div>
+                      <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
                 
-                    <button class="send-btn" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
+                      <div *ngIf="successMessage" class="success-message">
+                        {{ successMessage }}
+                      </div>
 
+                    <button type="submit" class="send-btn click-effect" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
                 </form>
                 <img class="back-to-landingpage-btn" onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
             </div>
         </aside>
     </div>
-
     }
+
     <div class="blue-smoke-left">
         <img src="./../../../assets/contactme/blue_smoke_contact_me.png">
     </div>

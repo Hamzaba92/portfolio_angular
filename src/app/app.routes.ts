@@ -1,14 +1,19 @@
 import { Routes, RouterModule } from '@angular/router';
-import { AboutMeComponent } from './main-content/about-me/about-me.component';
-import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
-import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 
 
 
 
 export const routes: Routes = [
-    { path: 'app-about-me', component: AboutMeComponent},
-    { path: 'app-my-skills', component: MySkillsComponent},
+   
+    
+    { path: '', component: MainContentComponent},
+    { path: 'privacy-policy', component: PrivacyPolicyComponent},
+    { path: 'imprint', component: ImprintComponent},
+    
+
 
 ];

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../language.service';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  languageService = inject(LanguageService);
 }

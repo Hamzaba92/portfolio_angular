@@ -12,7 +12,11 @@
                 <span class="letter letter9">i</span>
                 <span class="letter letter10">n</span>
             </div>
-            <p>Imprint</p>
+            @if (languageService.langDE) {
+            <p><a href="imprint">Imprint</a></p>
+            }@else {
+                <p><a href="imprint">Impressum</a></p>
+            }
         </div>
 
         <div class="overcontainer-middle">

@@ -9,12 +9,15 @@ import { isPlatformBrowser } from '@angular/common';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ContactMeComponent } from './main-content/contact-me/contact-me.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ImprintComponent } from './imprint/imprint.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, LandingPageComponent, 
   AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
-   ContactMeComponent, FooterComponent],
+   ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

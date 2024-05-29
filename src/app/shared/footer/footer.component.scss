@@ -16,9 +16,14 @@ footer{
     .overcontainer-left{
         text-decoration: none;
          p{ margin: 0;
+            a{
+                text-decoration: none;
+                color: white;
             &:hover{
                 cursor: pointer;
                 text-decoration: underline;
+                text-decoration-color: #00BEE8;
+            }
             }
         }
     }
