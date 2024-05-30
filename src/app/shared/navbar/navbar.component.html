@@ -31,9 +31,42 @@
                 <a [ngClass]="{'clicked': languageService.aboutme}" id="aboutme" (click)="languageService.clickedLink('aboutme')" href="#anchorabt">Über mich</a>
                 <a [ngClass]="{'clicked': languageService.skills}" id="skills" (click)="languageService.clickedLink('skills')" href="#anchor_myskills">Skills</a>
                 <a [ngClass]="{'clicked': languageService.portfolio}" href="#anchor_portfolio" id="portfolio" (click)="languageService.clickedLink('portfolio')">Portfolio</a>
-                    
             }
+            
         </div>
+        <img (click)="showBurger()" class="burger-icon" src="./../../../assets/mobile/burger menu.png">
     </nav>
 
 </div>
+
+<div class="Burger-Menu" [ngClass]="{'Show-BurgerMenu': burgerMenu}" (click)="showBurger()">
+
+    <section class="overcontainer">
+            <div class="language-container-mobile">
+                <a [ngClass]="{'clicked-for-EN-DE-mirror': languageService.langDE}" (click)="languageService.changeLanguage('de')" style="cursor: pointer;">EN</a>
+                <div></div>
+                <a [ngClass]="{'clicked-for-EN-DE': languageService.langEN}" (click)="languageService.changeLanguage('en')" style="cursor: pointer;">DE</a>
+            </div>
+
+                <div class="links-container-mobile">
+            @if (languageService.langDE) {
+                <a [ngClass]="{'clicked': languageService.aboutme}" id="aboutme" (click)="languageService.clickedLink('aboutme')" href="#anchorabt">About me</a>
+                <a [ngClass]="{'clicked': languageService.skills}" id="skills" (click)="languageService.clickedLink('skills')" href="#anchor_myskills">Skills</a>
+                <a [ngClass]="{'clicked': languageService.portfolio}" href="#anchor_portfolio" id="portfolio"
+                    (click)="languageService.clickedLink('portfolio')">Portfolio</a>
+                <a [ngClass]="{'clicked': languageService.contact}" id="contact" (click)="languageService.clickedLink('contact')" href="#contact_mobile">Contact</a>
+                }@else{
+                    <a [ngClass]="{'clicked': languageService.aboutme}" id="aboutme" (click)="languageService.clickedLink('aboutme')" href="#anchorabt">Über mich</a>
+                    <a [ngClass]="{'clicked': languageService.skills}" id="skills" (click)="languageService.clickedLink('skills')" href="#anchor_myskills">Skills</a>
+                    <a [ngClass]="{'clicked': languageService.portfolio}" href="#anchor_portfolio" id="portfolio" (click)="languageService.clickedLink('portfolio')">Portfolio</a>
+                    <a [ngClass]="{'clicked': languageService.contact}" id="contact" (click)="languageService.clickedLink('contact')" href="#contact_mobile">Kontakt</a>
+                }
+                </div>
+    </section>
+            
+</div>
+
+
+
+
+

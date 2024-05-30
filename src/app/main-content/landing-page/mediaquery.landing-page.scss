@@ -1,0 +1,483 @@
+@media (max-width: 1300px) {
+    .iam-dev-txt {
+        width: 700px;
+        height: 172px;
+        font-family: 'Poppins';
+        position: absolute;
+        left: 32% !important;
+        top: 35%;
+        z-index: 2;
+        display: flex;
+
+        .rotate-txt {
+            transform: rotate(270deg);
+            color: white;
+            font-size: 61px !important;
+            margin: 0;
+            line-height: 76px;
+            padding-top: 72px;
+        }
+
+        .flex-coloum {
+
+            .name {
+                font-size: 66px;
+            }
+
+            .color-change {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 205px !important;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .iam-dev-txt {
+        width: 600px;
+        height: 172px;
+        font-family: 'Poppins';
+        position: absolute;
+        left: 32% !important;
+        top: 35%;
+        z-index: 2;
+        display: flex;
+
+        .rotate-txt {
+            transform: rotate(270deg);
+            color: white;
+            font-size: 50px !important;
+            margin: 0;
+            line-height: 76px;
+            padding-top: 72px;
+        }
+
+        .flex-coloum {
+
+            .name {
+                font-size: 48px;
+            }
+
+            .color-change {
+                font-size: 42px;
+                line-height: 54px;
+            }
+        }
+    }
+
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 260px !important;
+        }
+    }
+
+}
+
+@media (max-width: 830px) {
+    .iam-dev-txt {
+        width: 450px;
+        height: 172px;
+        font-family: 'Poppins';
+        position: absolute;
+        left: 35% !important;
+        top: 35%;
+        z-index: 2;
+        display: flex;
+
+        .rotate-txt {
+            transform: rotate(270deg);
+            color: white;
+            font-size: 28px !important;
+            margin: 0;
+            line-height: 0;
+            padding-top: 62px !important;
+            text-align: center;
+        }
+
+        .flex-coloum {
+            line-height: 54px;
+            padding-top: 34px;
+            margin: 12px;
+
+            .name {
+                font-size: 32px;
+                line-height: 44px;
+            }
+
+            .color-change {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 310px !important;
+        }
+    }
+
+    .button-lets-talk {
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 124px !important;
+            height: 44px !important;
+            font-size: 16px !important;
+            font-weight: 400;
+            background-color: #00BEE8;
+            color: white;
+            border-radius: 9px 9px 9px 9px;
+            border: none;
+            margin-right: 175px;
+            margin-top: 26px !important;
+
+            &:hover {
+                background-color: $color_violett;
+                scale: 1.2;
+                cursor: pointer;
+                transition: all ease-in-out 0.55s;
+            }
+        }
+    }
+
+    .portrait-container {
+        position: absolute;
+        top: 23% !important;
+        left: -25px;
+        width: 50%;
+        height: 35%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+
+        .leftbehindfoto-blue {
+            width: 89%;
+            height: 118%;
+            position: absolute;
+            left: -16%;
+            top: 13% !important;
+            transform: rotate(91deg);
+        }
+
+        .rightbehindfoto-turquise {
+            width: 69%;
+            height: 170%;
+            position: absolute;
+            right: 5%;
+            top: -14% !important;
+            transform: rotate(66deg);
+            z-index: -1;
+        }
+
+        .portraitfoto {
+            position: relative;
+            height: 405px !important;
+
+        }
+    }
+
+    .overcontainer-right {
+        color: white;
+        display: flex;
+        align-items: center;
+
+        img {
+            display: flex;
+            animation: pulse 1.5s infinite;
+            height: 120px;
+        }
+
+    }
+}
+
+
+@media (max-width: 720px) {
+    .socialmedia-links {
+        position: absolute;
+        left: 0%;
+        top: 75%!important;
+        z-index: 50;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Poppins';
+        height: 165px;
+        max-width: 1440px;
+        width: 100%;
+
+        .overcontainer-left {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            font-weight: 500;
+            height: 214px;
+            font-size: 13px;
+
+            .empty-bar {
+                height: 2px;
+                width: 100px;
+                background-color: $color_violett;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .github-svg {
+
+                img{
+                height: 22px;
+                width: 22px;
+                }
+                &:hover {
+                    scale: 1.25;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+
+            .email-svg {
+
+                img{
+                height: 22px;
+                width: 22px;
+                }
+                &:hover {
+                    scale: 1.25;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+
+            .linkedIn-svg {
+                img{
+                height: 22px;
+                width: 22px;
+                }
+                &:hover {
+                    scale: 1.25;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+
+            span {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+        .overcontainer-right {
+            color: white;
+            display: flex;
+            align-items: center;
+
+            img {
+                display: flex;
+                animation: pulse 1.5s infinite;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 590px) {
+    .iam-dev-txt {
+        width: 380px!important;
+        height: 172px;
+        font-family: 'Poppins';
+        position: absolute;
+        left: 35% !important;
+        top: 35%;
+        z-index: 2;
+        display: flex;
+
+        .rotate-txt {
+            font-size: 24px !important;
+            padding-top: 60px !important;
+        }
+
+        .flex-coloum {
+            line-height: 54px;
+            padding-top: 34px;
+            margin: 12px;
+
+            .name {
+                font-size: 24px!important;
+                line-height: 44px;
+            }
+
+            .color-change {
+                font-size: 20px!important;
+                line-height: 35px;
+            }
+        }
+    }
+
+        .button-lets-talk {
+            display: flex;
+            justify-content: center;
+    
+            button {
+                width: 108px !important;
+                height: 38px !important;
+                font-size: 12px !important;
+            }
+        }
+
+        .portrait-container {
+            position: absolute;
+            top: 30% !important;
+            left: -25px;
+            width: 50%;
+            height: 35%;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+    
+            .leftbehindfoto-blue {
+                width: 89%;
+                height: 118%;
+                position: absolute;
+                left: -16%;
+                top: -15% !important;
+                transform: rotate(91deg);
+            }
+    
+            .rightbehindfoto-turquise {
+                width: 69%;
+                height: 170%;
+                position: absolute;
+                right: 5%;
+                top: -17% !important;
+                transform: rotate(66deg);
+                z-index: -1;
+            }
+    
+            .portraitfoto {
+                position: relative;
+                height: 305px !important;
+    
+            }
+        }
+
+}
+
+//mobile-version
+
+@media (max-width: 500px) {
+    .overcontainer-left{
+        span{
+            display: none;
+        }
+    }
+
+    .iam-dev-txt{
+    position: absolute;
+    left: 27%!important;
+    top: 56%!important;
+    z-index: 2;
+    display: flex;
+    height: 200px!important;
+
+    .rotate-txt{
+        height: 40px;
+        width: 70px;
+        display: flex;
+        position: absolute;
+        line-height: 0px!important;
+        left: -14%;
+        top: 16%;
+        font-size: 27px !important;
+        }
+    }
+
+    .vectorpicture-right-side{
+        img{
+        margin-top: 355px !important;
+        }
+    }
+
+    .portrait-container{
+        top: 20%!important;
+        left: -23px!important;
+        width: 113%!important;
+        height: 36%!important;
+        .portraitfoto{
+            height: 358px!important;
+        }
+    }
+
+    .socialmedia-links {
+        left: 0%;
+        top: 85%!important;
+        z-index: 50;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Poppins';
+        align-items: flex-end!important;
+        height: 80px!important;
+        max-width: 1440px;
+        width: 100%;
+
+        .overcontainer-left {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            font-weight: 500;
+            height: 70px!important;
+            font-size: 13px;
+
+            .empty-bar {
+                height: 2px;
+                width: 100px;
+                background-color: $color_violett;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .button-lets-talk{
+        margin-left: 37px!important;
+    }
+
+
+}
+
+@media (max-width: 340px) {
+    .iam-dev-txt{
+        left: 21%!important;
+    }
+}

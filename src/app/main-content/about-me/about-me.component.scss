@@ -102,7 +102,7 @@ $color_button: #00BEE8;
 
     .about-me-photo-eclips {
         position: absolute;
-        right: -100px;
+        right: 0;
         bottom: 0;
         top: 0;
         z-index: 53;
@@ -117,18 +117,18 @@ $color_button: #00BEE8;
             border: 2px solid $color_button;
             border-radius: 50%;
             img {
-                height: 318px;
-                width: 318px;
-                object-fit: cover;
+                height: 324px;
+                width: 324px;
+                object-fit: contain;
                 position: relative;
                 border-radius: 50%;
-                padding: 10px;
+                padding: 5px;
             }
         }
 
         .bar {
             height: 2px;
-            width: 252px;
+            width: 200px;
             background-color: $color_button;
         }
     }

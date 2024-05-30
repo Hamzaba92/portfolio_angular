@@ -2,6 +2,8 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
+@import './mediaquery.landing-page.scss';
+
 .background-landing-page {
     height: 100vh;
     width: 100%;
@@ -47,10 +49,14 @@ $color_button: #00BEE8;
 
 .vectorpicture-right-side {
     display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    overflow: hidden;
     img {
         width: 100%;
         z-index: 1;
         margin-top: 125px;
+        max-width: 1440px;
     }
 }
 

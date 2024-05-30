@@ -19,4 +19,16 @@ export class NavbarComponent {
 
   burgerMenu: boolean = false;
 
+  showBurger() {
+    if(this.burgerMenu){
+      this.burgerMenu = false;
+    }
+    else{
+      this.burgerMenu = true;
+    }
+  }
+
+
+  
+
 }

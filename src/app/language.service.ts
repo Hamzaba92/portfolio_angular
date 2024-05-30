@@ -15,7 +15,7 @@ export class LanguageService {
   aboutme: boolean = false;
   skills: boolean = false;
   portfolio: boolean = false;
-
+  contact: boolean = false;
 
   clickedAboutMeLink() {
     this.aboutme = true;
