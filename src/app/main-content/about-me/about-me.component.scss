@@ -9,7 +9,7 @@ $color_button: #00BEE8;
     display: flex;
 }
 
-.overcontainer{
+.overcontainer {
     max-width: 1440px;
     width: 100%;
     display: flex;
@@ -88,17 +88,19 @@ $color_button: #00BEE8;
     position: absolute;
     right: 0;
     z-index: 52;
-    img{
+
+    img {
         height: 430px;
     }
 }
 
 .right-side {
-   position: relative;
-   width: 50%;
-   display: flex;
-   align-items: center;
-    .about-me-photo-eclips{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    .about-me-photo-eclips {
         position: absolute;
         right: -100px;
         bottom: 0;
@@ -107,14 +109,24 @@ $color_button: #00BEE8;
         flex-direction: row;
         display: flex;
         align-items: center;
-        img{
-            height: 324px;
-            width: 324px;
-            object-fit: contain;
+
+        .img-cont {
+            position: relative;
+            width: 340px;
+            height: 340px;
+            border: 2px solid $color_button;
             border-radius: 50%;
-            border: #00BEE8 2px solid;
+            img {
+                height: 318px;
+                width: 318px;
+                object-fit: cover;
+                position: relative;
+                border-radius: 50%;
+                padding: 10px;
+            }
         }
-        .bar{
+
+        .bar {
             height: 2px;
             width: 252px;
             background-color: $color_button;
