@@ -2,11 +2,14 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
+@import './mediaquery.about-me.scss';
+
+
 .background-about-me {
     background-color: $color_background;
     height: 100vh;
-    width: 100%;
     display: flex;
+    width: 100%;
 }
 
 .overcontainer {
@@ -18,13 +21,13 @@ $color_button: #00BEE8;
 
 .left-side {
     position: relative;
-    z-index: 51;
     font-family: 'Poppins';
     color: white;
     width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 53;
 
     .about-me-cont {
         min-height: 340px;
@@ -84,16 +87,6 @@ $color_button: #00BEE8;
     }
 }
 
-.blue-smoke {
-    position: absolute;
-    right: 0;
-    z-index: 52;
-
-    img {
-        height: 430px;
-    }
-}
-
 .right-side {
     position: relative;
     width: 50%;
@@ -132,4 +125,16 @@ $color_button: #00BEE8;
             background-color: $color_button;
         }
     }
+
+    .blue-smoke {
+        position: absolute;
+        right: 0;
+        z-index: 52;
+    
+        img {
+            height: 430px;
+        }
+    }
+
+
 }

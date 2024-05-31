@@ -1,0 +1,212 @@
+@media (max-width: 1200px) {
+    .myskills-txt-btn {
+        width: 390px !important;
+        height: 279px;
+        position: absolute;
+        top: 230%;
+        right: 0;
+        font-family: 'Poppins';
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .undercontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .row-the-content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+
+                .myskills-title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end !important;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    column-gap: 25px;
+
+                    span {
+                        font-size: 50px !important;
+                        font-weight: 700;
+                        display: flex;
+                        padding-left: 78px;
+                    }
+
+                    .bar {
+                        width: 58px;
+                        height: 2px;
+                        background-color: $color_violett;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+
+                }
+
+            }
+
+            span {
+                text-align: center;
+                font-size: 12px !important;
+            }
+
+        }
+
+        button {
+            background-color: $color_button;
+            border: none;
+            width: 142px !important;
+            height: 48px !important;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            font-size: 18px !important;
+            margin-top: 25px;
+            font-family: 'Poppins';
+            font-weight: 400;
+
+            &:hover {
+                background-color: $color_violett;
+                scale: 1.2;
+                cursor: pointer;
+                transition: all ease-in-out 0.55s;
+            }
+        }
+    }
+
+    .icons {
+        width: 555px !important;
+        position: absolute;
+        left: 100px;
+        top: 150% !important;
+        z-index: 2;
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 980px) {
+    .icons {
+        left: 10px !important;
+        gap: 5px !important;
+        width: 440px !important;
+
+        img {
+            height: 70px !important;
+            width: 58px !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    .myskills-txt-btn {
+        top: 130% !important;
+        height: 214px !important;
+        font-size: 10px !important;
+
+        button {
+            font-size: 14px !important;
+            width: 114px !important;
+            height: 42px !important;
+        }
+    }
+
+    .icons {
+        top: 330% !important;
+        height: 298px !important;
+
+        img {
+            height: 42px !important;
+            width: 38px !important;
+        }
+
+        a{
+            font-size: 2rem!important;
+        }
+    }
+
+    .myskills-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+
+        span {
+            padding-left: 2px!important;
+        }
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+ .icons{
+    left: 57px !important;
+    gap: 5px !important;
+    width: 335px !important;
+    height: 238px !important;
+    top: 300% !important;
+    img{
+        height: 48px !important;
+        width: 42px !important;
+    }
+    
+ }
+
+ .myskills-txt-btn{
+    z-index: 2;
+    width: 312px !important;
+ }
+
+ .myskills-txt-btn{
+
+    button{
+        position: absolute;
+        top: 212%!important;
+        left: 35%!important;        //muss später nachdem der bug gefunden wurde hier zentriert werden 
+        //right: 50%!important;
+    }
+ }
+
+}
+
+@media (max-width: 365px) {
+    .myskills-txt-btn{
+
+        .myskills-title{
+            font-size: 44px !important;
+
+            span{
+                font-size: 10px !important;
+            }
+
+            .bar{
+                width: 38px!important;
+            }
+        }
+        button{
+            position: absolute;
+            top: 212%!important;
+            left: 35%!important;        //muss später nachdem der bug gefunden wurde hier zentriert werden 
+            //right: 50%!important;
+        }
+     }
+
+     .icons{
+        width: 278px !important;
+        left: 27px !important;
+     }
+}

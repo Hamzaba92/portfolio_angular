@@ -2,11 +2,19 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
+@import './mediaquery.my-skills.scss';
+
 .background-my-skills {
     height: 100vh;
     background-color: $color_background;
     flex-direction: column;
     width: 100%;
+    position: relative;
+
+    .overcontainer{
+        padding-top: 115px;
+        position: relative;
+        max-width: 1440px; 
 
     .blue-smoke {
         position: relative;
@@ -19,7 +27,6 @@ $color_button: #00BEE8;
             width: 280px;
             position: absolute;
             left: 0;
-            transform: translateY(-50%);
             top: 53%;
             z-index: 1;
         }
@@ -34,7 +41,7 @@ $color_button: #00BEE8;
         flex-wrap: wrap;
         position: absolute;
         left: 100px;
-        top: 230%;
+        top: 180%;
         z-index: 2;
         gap: 20px;
 
@@ -132,6 +139,8 @@ $color_button: #00BEE8;
             }
         }
     }
+
+}
 
 }
 
