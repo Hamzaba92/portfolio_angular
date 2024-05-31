@@ -3,11 +3,13 @@ $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
 
+@import './mediaquery.portfolio.scss';
+
 
 .background-portfolio {
     height: 190vh;
     background-color: $color_background;
-
+    width: 100%;
     .blue-smoke-left-side {
         position: absolute;
         left: 0;
@@ -22,6 +24,7 @@ $color_button: #00BEE8;
     
 
     .overcontainer {
+        max-width: 1440px;
         .header {
             width: 100%;
             padding-top: 115px;
