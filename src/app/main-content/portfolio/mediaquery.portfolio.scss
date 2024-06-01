@@ -620,7 +620,6 @@
 }
 
 
-
 @media (max-width: 690px) {
 
     .background-portfolio {
@@ -680,7 +679,7 @@
             align-items: center;
             z-index: 1;
             flex-direction: column!important;
-            padding-bottom: 270px!important;
+            padding-bottom: 250px!important;
             .left-img {
     
                 img {
@@ -710,7 +709,8 @@
             align-items: center;
             z-index: 1;
             flex-direction: column-reverse!important;
-    
+            padding-bottom: 50px!important;
+            
             .livetest-github {
                 width: 250px!important;
                 height: 150px;
@@ -900,7 +900,7 @@
             }
         }
     
-        }
+    }
 
 }
 
