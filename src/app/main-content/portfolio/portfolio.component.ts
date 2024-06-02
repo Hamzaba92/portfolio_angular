@@ -25,4 +25,26 @@ export class PortfolioComponent {
     this.buttonText = "Live Test";
     button.style.transition = "all ease-in-out 0.3s"
   }
+
+  openLinkJoin(){
+    window.open('https://join.mudzahedin-rizvanovic.com/Login/login.html');
+  }
+
+  openLinkJoinGithub(){
+    window.open('https://github.com/CookieCrack3r/Join');
+  }
+
+  openLinkPolloLoco(){
+    window.open('https://el-pollo-loco.mudzahedin-rizvanovic.com/index.html');
+  }
+
+  openLinkPolloLocoGithub(){
+    window.open('https://github.com/Hamzaba92/El-Pollo-Loco');
+  }
+
+  openLinkPortfolioGithub(){
+    window.open('https://github.com/Hamzaba92/portfolio_angular');
+  }
 }
+
+

@@ -186,9 +186,12 @@ $color_button: #00BEE8;
                 }
             }
 
-            span {
+            a {
+                color: white;
+                text-decoration: none;
                 &:hover {
                     cursor: pointer;
+                    color: $color_button;
                 }
             }
         

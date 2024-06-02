@@ -35,7 +35,7 @@
 
             <section class="el-pollo-loco-conti">
                 <div class="livetest-github">
-                    <header>El Pollo-Locco</header>
+                    <header>El Pollo-Loco</header>
                     <span>HTML | JavaScript | CSS</span>
                     <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa
                         to fight against the crazy hen.</p>
@@ -99,23 +99,23 @@
                         Ein Task-Manager, der vom Kanban-System inspiriert ist. Aufgaben können per Drag-and-Drop erstellt und organisiert sowie Benutzern und Kategorien zugewiesen werden.
                     </p>
                     <div class="buttons">
-                        <button class="live-btn">Live Test</button>
-                        <button class="github-btn">Github</button>
+                        <button (click)="openLinkJoin()" class="live-btn">Live Test</button>
+                        <button (click)="openLinkJoinGithub()" class="github-btn">Github</button>
                     </div>
                 </div>
             </section>
 
             <section class="el-pollo-loco-conti">
                 <div class="livetest-github">
-                    <header>El Pollo-Locco</header>
+                    <header>El Pollo-Loco</header>
                     <span>HTML | JavaScript | CSS</span>
                     <p>
                     
                         Ein Spiel zum Springen, Laufen und Werfen, basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-flaschen zu finden, um gegen das verrückte Huhn zu kämpfen.
                     </p>
                     <div class="buttons">
-                        <button class="live-btn-pepe">Live Test</button>
-                        <button class="github-btn-pepe">Github</button>
+                        <button (click)="openLinkPolloLoco()" class="live-btn-pepe">Live Test</button>
+                        <button (click)="openLinkPolloLocoGithub()" class="github-btn-pepe">Github</button>
                     </div>
                 </div>
                 <div class="right-img">
@@ -140,7 +140,7 @@
                     </p>
                     <div class="buttons">
                         <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
-                        <button class="github-btn">Github</button>
+                        <button (click)="openLinkPortfolioGithub()" class="github-btn">Github</button>
                     </div>
                 </div>
             </section>
