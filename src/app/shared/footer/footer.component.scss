@@ -2,85 +2,134 @@ $color_background: #141D2F;
 $color_violett: #4B47FF;
 $color_button: #00BEE8;
 
-@import './mediaquery.footer.scss';
+@import './mediaquery-footer.scss';
 
-footer{
+footer {
     width: 100%;
     height: 200px;
     background-color: $color_background;
     border-top: 1.5px solid $color_button;
     font-family: 'Poppins';
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    .overcontainer-left{
-        text-decoration: none;
-         p{ margin: 0;
-            a{
-                text-decoration: none;
-                color: white;
-            &:hover{
-                cursor: pointer;
-                text-decoration: underline;
-                text-decoration-color: #00BEE8;
-            }
-            }
-        }
-    }
 
-    .overcontainer-middle{
+
+    .max-width-container {
+        max-width: 1440px;
+        height: 100%;
         color: white;
-        span{
-            font-size: 23px;
-        }
-    }
-
-    .overcontainer-right{
         display: flex;
-        column-gap: 30px;
-        img{
-            height: 30;
-            width: 30;
-            object-fit: contain;
-            &:hover{
-                scale: 1.25;
-                cursor: pointer;
-                transition: all ease-in-out 0.3s;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .overcontainer-left {
+            text-decoration: none;
+
+            p {
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                        text-decoration-color: #00BEE8;
+                    }
+                }
             }
         }
+
+        .overcontainer-middle {
+            color: white;
+
+            span {
+                font-size: 23px;
+            }
+        }
+
+        .overcontainer-right {
+            display: flex;
+            column-gap: 30px;
+
+            img {
+                height: 30;
+                width: 30;
+                object-fit: contain;
+
+                &:hover {
+                    scale: 1.25;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+        }
+
     }
 }
 
-.letter1 { color: white; } 
-.letter2 { color: white; } 
-.letter3 { color: white; } 
-.letter4 { color: white; } 
-.letter5 { color: white; } 
-.letter6 { color: white; } 
-.letter7 { color: white; } 
-.letter8 { color: $color_button; } 
+.letter1 {
+    color: white;
+}
 
-.letter9 { 
-    color: $color_button; 
+.letter2 {
+    color: white;
+}
+
+.letter3 {
+    color: white;
+}
+
+.letter4 {
+    color: white;
+}
+
+.letter5 {
+    color: white;
+}
+
+.letter6 {
+    color: white;
+}
+
+.letter7 {
+    color: white;
+}
+
+.letter8 {
+    color: $color_button;
+}
+
+.letter9 {
+    color: $color_button;
     position: relative;
-        &::after{
-                content: '';
-                position: absolute;
-                top: 5.9px; 
-                left: 50%;
-                transform: translateX(-50%);
-                width: 0.18em; 
-                height: 0.18em; 
-                background-color: white;
-                border-radius: 50%;
-            }
-} 
 
-.letter10 { color: $color_button; } 
+    &::after {
+        content: '';
+        position: absolute;
+        top: 5.9px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0.18em;
+        height: 0.18em;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
 
-.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, .letter9, .letter10{
+.letter10 {
+    color: $color_button;
+}
+
+.letter1,
+.letter2,
+.letter3,
+.letter4,
+.letter5,
+.letter6,
+.letter7,
+.letter8,
+.letter9,
+.letter10 {
     font-size: 24px;
     font-weight: 600;
 }

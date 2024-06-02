@@ -55,16 +55,17 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly!important;
+            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
+
             .left-img {
-    
+
                 img {
-                    height: 306px!important;
+                    height: 306px !important;
                     filter: grayscale(100);
                     margin-bottom: 35px;
-    
+
                     &:hover {
                         cursor: pointer;
                         filter: grayscale(0);
@@ -73,66 +74,66 @@
                     }
                 }
             }
-    
+
             .github-livetest {
-                width: 318px!important;
+                width: 318px !important;
                 height: 150px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 column-gap: 112px;
-    
+
                 .join {
                     color: $color_violett;
-                    font-size: 20px!important;
+                    font-size: 20px !important;
                     font-weight: 700;
                 }
-    
+
                 .over-description {
-                    font-size: 14px!important;
+                    font-size: 14px !important;
                     color: $color_button;
                     font-weight: 400;
                 }
-    
+
                 p {
-                    font-size: 10px!important;
+                    font-size: 10px !important;
                     font-weight: 400;
                     margin-top: 2px;
                 }
-    
+
                 .buttons {
                     display: flex;
                     justify-content: flex-start;
                     gap: 35px;
                     margin-top: 2px;
-    
+
                     .live-btn {
                         background-color: $color_violett;
                         color: white;
                         border: none;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
-                        font-size: 12px!important;
-    
+                        font-size: 12px !important;
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
                             transition: all ease-in-out 0.3s;
                         }
                     }
-    
+
                     .github-btn {
                         color: white;
                         background-color: $color_background;
                         border: solid 1px $color_button;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
-                        font-size: 12px!important;
-    
+                        font-size: 12px !important;
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
@@ -140,7 +141,7 @@
                         }
                     }
                 }
-    
+
             }
         }
 
@@ -148,12 +149,12 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly!important;
+            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
 
             .livetest-github {
-                width: 250px!important;
+                width: 250px !important;
                 height: 150px;
                 display: flex;
                 flex-direction: column;
@@ -162,14 +163,14 @@
 
                 header {
                     color: $color_violett;
-                    font-size: 20px!important;
+                    font-size: 20px !important;
                     font-weight: 700;
                     display: flex;
                     justify-content: flex-end;
                 }
 
                 span {
-                    font-size: 14px!important;
+                    font-size: 14px !important;
                     color: $color_button;
                     font-weight: 400;
                     display: flex;
@@ -177,7 +178,7 @@
                 }
 
                 p {
-                    font-size: 10px!important;
+                    font-size: 10px !important;
                     font-weight: 400;
                     margin-top: 2px;
                     display: flex;
@@ -196,10 +197,10 @@
                     color: white;
                     border: none;
                     border-radius: 10px 10px 10px 10px;
-                    height: 40px!important;
-                    width: 100px!important;
+                    height: 40px !important;
+                    width: 100px !important;
                     font-family: 'Poppins';
-                    font-size: 12px!important;
+                    font-size: 12px !important;
 
                     &:hover {
                         background-color: $color_button;
@@ -213,10 +214,10 @@
                     background-color: $color_background;
                     border: solid 1px $color_button;
                     border-radius: 10px 10px 10px 10px;
-                    height: 40px!important;
-                    width: 100px!important;
+                    height: 40px !important;
+                    width: 100px !important;
                     font-family: 'Poppins';
-                    font-size: 12px!important;
+                    font-size: 12px !important;
 
                     &:hover {
                         background-color: $color_button;
@@ -228,7 +229,7 @@
 
             .right-img {
                 img {
-                    height: 306px!important;
+                    height: 306px !important;
                     filter: grayscale(100);
                     margin-bottom: 35px;
 
@@ -249,16 +250,17 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly!important;
+            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
+
             .left-img {
-        
+
                 img {
-                    height: 306px!important;
+                    height: 306px !important;
                     filter: grayscale(100);
                     margin-bottom: 35px;
-        
+
                     &:hover {
                         cursor: pointer;
                         filter: grayscale(0);
@@ -267,68 +269,68 @@
                     }
                 }
             }
-        
+
             .github-livetest {
-                width: 250px!important;
+                width: 250px !important;
                 height: 150px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 column-gap: 112px;
-        
+
                 header {
                     color: $color_violett;
-                    font-size: 20px!important;
+                    font-size: 20px !important;
                     font-weight: 700;
                 }
-        
+
                 .over-description {
-                    font-size: 14px!important;
+                    font-size: 14px !important;
                     color: $color_button;
                     font-weight: 400;
                 }
-        
+
                 p {
-                    font-size: 10px!important;
+                    font-size: 10px !important;
                     font-weight: 400;
                     margin-top: 2px;
                 }
-        
+
                 .buttons {
                     display: flex;
                     justify-content: flex-start;
                     gap: 35px;
                     margin-top: 2px;
-        
+
                     .live-btn {
                         background-color: $color_violett;
                         color: white;
                         border: none;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
-                        font-size: 12px!important;
-        
+                        font-size: 12px !important;
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
                             transition: all ease-in-out 0.3s;
                         }
-        
-        
+
+
                     }
-        
+
                     .github-btn {
                         color: white;
                         background-color: $color_background;
                         border: solid 1px $color_button;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
-                        font-size: 12px!important;
-        
+                        font-size: 12px !important;
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
@@ -336,7 +338,7 @@
                         }
                     }
                 }
-        
+
             }
         }
     }
@@ -388,222 +390,111 @@
         }
     }
 
-    .projects{
+    .projects {
 
-    .join-conti {
-        height: 340px;
-        width: 660px!important;
-        display: flex;
-        justify-content: space-evenly !important;
-        align-items: center;
-        z-index: 1;
-
-        .left-img {
-
-            img {
-                height: 292px !important;
-                filter: grayscale(100);
-                margin-bottom: 35px;
-
-                &:hover {
-                    cursor: pointer;
-                    filter: grayscale(0);
-                    transform: scale(1.15);
-                    transition: all ease-in-out 0.7s;
-                }
-            }
-        }
-
-        .github-livetest {
-            width: 250px!important;
-            }
-        }
-
-    .el-pollo-loco-conti {
-        height: 340px;
-        width: 660px!important;
-        display: flex;
-        justify-content: space-evenly!important;
-        align-items: center;
-        z-index: 1;
-
-        .livetest-github {
-            width: 250px!important;
-            height: 150px;
+        .join-conti {
+            height: 340px;
+            width: 660px !important;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            column-gap: 112px;
+            justify-content: space-evenly !important;
+            align-items: center;
+            z-index: 1;
 
-            header {
-                color: $color_violett;
-                font-size: 28px;
-                font-weight: 700;
-                display: flex;
-                justify-content: flex-end;
+            .left-img {
+
+                img {
+                    height: 292px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: grayscale(0);
+                        transform: scale(1.15);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
             }
 
-            span {
-                font-size: 19px;
-                color: $color_button;
-                font-weight: 400;
-                display: flex;
-                justify-content: flex-end;
-            }
-
-            p {
-                font-size: 14px;
-                font-weight: 400;
-                margin-top: 2px;
-                display: flex;
-                text-align: end;
+            .github-livetest {
+                width: 250px !important;
             }
         }
 
-        .buttons {
+        .el-pollo-loco-conti {
+            height: 340px;
+            width: 660px !important;
             display: flex;
-            justify-content: flex-end;
-            gap: 35px;
-            margin-top: 2px;
+            justify-content: space-evenly !important;
+            align-items: center;
+            z-index: 1;
 
-            .live-btn-pepe {
-                background-color: $color_violett;
-                color: white;
-                border: none;
-                border-radius: 10px 10px 10px 10px;
-                height: 50px;
-                width: 128px;
-                font-family: 'Poppins';
-                font-size: 20px;
+            .livetest-github {
+                width: 250px !important;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                column-gap: 112px;
 
-                &:hover {
-                    background-color: $color_button;
-                    cursor: pointer;
-                    transition: all ease-in-out 0.3s;
+                header {
+                    color: $color_violett;
+                    font-size: 28px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                span {
+                    font-size: 19px;
+                    color: $color_button;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-top: 2px;
+                    display: flex;
+                    text-align: end;
                 }
             }
 
-            .github-btn-pepe {
-                color: white;
-                background-color: $color_background;
-                border: solid 1px $color_button;
-                border-radius: 10px 10px 10px 10px;
-                height: 50px;
-                width: 128px;
-                font-family: 'Poppins';
-                font-size: 20px;
-
-                &:hover {
-                    background-color: $color_button;
-                    cursor: pointer;
-                    transition: all ease-in-out 0.3s;
-                }
-            }
-        }
-
-        .right-img {
-            img {
-                height: 292px!important;
-                filter: grayscale(100);
-                margin-bottom: 35px;
-
-                &:hover {
-                    cursor: pointer;
-
-                    transform: scale(1.15);
-                    filter: grayscale(0);
-                    transition: all ease-in-out 0.7s;
-                }
-            }
-
-        }
-
-    }
-
-    .portfolio-conti {
-        height: 340px;
-        width: 660px!important;
-        display: flex;
-        justify-content: space-evenly!important;
-        align-items: center;
-        z-index: 1;
-        .left-img {
-    
-            img {
-                height: 292px!important;
-                filter: grayscale(100);
-                margin-bottom: 35px;
-    
-                &:hover {
-                    cursor: pointer;
-                    filter: grayscale(0);
-                    transform: scale(1.15);
-                    transition: all ease-in-out 0.7s;
-                }
-            }
-        }
-    
-        .github-livetest {
-            width: 250px!important;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            column-gap: 112px;
-    
-            header {
-                color: $color_violett;
-                font-size: 20px!important;
-                font-weight: 700;
-            }
-    
-            .over-description {
-                font-size: 14px!important;
-                color: $color_button;
-                font-weight: 400;
-            }
-    
-            p {
-                font-size: 10px!important;
-                font-weight: 400;
-                margin-top: 2px;
-            }
-    
             .buttons {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: flex-end;
                 gap: 35px;
                 margin-top: 2px;
-    
-                .live-btn {
+
+                .live-btn-pepe {
                     background-color: $color_violett;
                     color: white;
                     border: none;
                     border-radius: 10px 10px 10px 10px;
-                    height: 40px!important;
-                    width: 100px!important;
+                    height: 50px;
+                    width: 128px;
                     font-family: 'Poppins';
                     font-size: 20px;
-    
+
                     &:hover {
                         background-color: $color_button;
                         cursor: pointer;
                         transition: all ease-in-out 0.3s;
                     }
-    
-    
                 }
-    
-                .github-btn {
+
+                .github-btn-pepe {
                     color: white;
                     background-color: $color_background;
                     border: solid 1px $color_button;
                     border-radius: 10px 10px 10px 10px;
-                    height: 40px!important;
-                    width: 100px!important;
+                    height: 50px;
+                    width: 128px;
                     font-family: 'Poppins';
                     font-size: 20px;
-    
+
                     &:hover {
                         background-color: $color_button;
                         cursor: pointer;
@@ -611,9 +502,121 @@
                     }
                 }
             }
-    
+
+            .right-img {
+                img {
+                    height: 292px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        transform: scale(1.15);
+                        filter: grayscale(0);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
+
+            }
+
         }
-    }
+
+        .portfolio-conti {
+            height: 340px;
+            width: 660px !important;
+            display: flex;
+            justify-content: space-evenly !important;
+            align-items: center;
+            z-index: 1;
+
+            .left-img {
+
+                img {
+                    height: 292px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: grayscale(0);
+                        transform: scale(1.15);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
+            }
+
+            .github-livetest {
+                width: 250px !important;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                column-gap: 112px;
+
+                header {
+                    color: $color_violett;
+                    font-size: 20px !important;
+                    font-weight: 700;
+                }
+
+                .over-description {
+                    font-size: 14px !important;
+                    color: $color_button;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 10px !important;
+                    font-weight: 400;
+                    margin-top: 2px;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 35px;
+                    margin-top: 2px;
+
+                    .live-btn {
+                        background-color: $color_violett;
+                        color: white;
+                        border: none;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 40px !important;
+                        width: 100px !important;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+
+
+                    }
+
+                    .github-btn {
+                        color: white;
+                        background-color: $color_background;
+                        border: solid 1px $color_button;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 40px !important;
+                        width: 100px !important;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                }
+
+            }
+        }
 
     }
 
@@ -623,7 +626,7 @@
 @media (max-width: 690px) {
 
     .background-portfolio {
-        height: 250vh!important;
+        height: 200vh !important;
     }
 
     .header {
@@ -669,24 +672,25 @@
         }
     }
 
-    .projects{
+    .projects {
 
         .join-conti {
             height: 340px;
-            width: 660px!important;
+            width: 660px !important;
             display: flex;
             justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
-            flex-direction: column!important;
-            padding-bottom: 250px!important;
+            flex-direction: column !important;
+            padding-bottom: 250px !important;
+
             .left-img {
-    
+
                 img {
                     height: 292px !important;
                     filter: grayscale(100);
-                    margin-bottom: 0!important;
-    
+                    margin-bottom: 0 !important;
+
                     &:hover {
                         cursor: pointer;
                         filter: grayscale(0);
@@ -695,30 +699,30 @@
                     }
                 }
             }
-    
+
             .github-livetest {
-                width: 250px!important;
-                }
+                width: 250px !important;
+            }
         }
-    
+
         .el-pollo-loco-conti {
             height: 340px;
-            width: 660px!important;
+            width: 660px !important;
             display: flex;
-            justify-content: space-evenly!important;
+            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
-            flex-direction: column-reverse!important;
-            padding-bottom: 50px!important;
-            
+            flex-direction: column-reverse !important;
+            padding-bottom: 50px !important;
+
             .livetest-github {
-                width: 250px!important;
+                width: 250px !important;
                 height: 150px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 column-gap: 112px;
-    
+
                 header {
                     color: $color_violett;
                     font-size: 28px;
@@ -726,7 +730,7 @@
                     display: flex;
                     justify-content: flex-end;
                 }
-    
+
                 span {
                     font-size: 19px;
                     color: $color_button;
@@ -734,7 +738,7 @@
                     display: flex;
                     justify-content: flex-end;
                 }
-    
+
                 p {
                     font-size: 14px;
                     font-weight: 400;
@@ -743,13 +747,13 @@
                     text-align: end;
                 }
             }
-    
+
             .buttons {
                 display: flex;
                 justify-content: flex-end;
                 gap: 35px;
                 margin-top: 2px;
-    
+
                 .live-btn-pepe {
                     background-color: $color_violett;
                     color: white;
@@ -759,14 +763,14 @@
                     width: 128px;
                     font-family: 'Poppins';
                     font-size: 20px;
-    
+
                     &:hover {
                         background-color: $color_button;
                         cursor: pointer;
                         transition: all ease-in-out 0.3s;
                     }
                 }
-    
+
                 .github-btn-pepe {
                     color: white;
                     background-color: $color_background;
@@ -776,7 +780,7 @@
                     width: 128px;
                     font-family: 'Poppins';
                     font-size: 20px;
-    
+
                     &:hover {
                         background-color: $color_button;
                         cursor: pointer;
@@ -784,41 +788,42 @@
                     }
                 }
             }
-    
+
             .right-img {
                 img {
-                    height: 292px!important;
+                    height: 292px !important;
                     filter: grayscale(100);
-                    margin-bottom: 0!important;
-    
+                    margin-bottom: 0 !important;
+
                     &:hover {
                         cursor: pointer;
-    
+
                         transform: scale(1.15);
                         filter: grayscale(0);
                         transition: all ease-in-out 0.7s;
                     }
                 }
-    
+
             }
-    
+
         }
-    
+
         .portfolio-conti {
             height: 340px;
-            width: 660px!important;
+            width: 660px !important;
             display: flex;
-            justify-content: space-evenly!important;
+            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
-            flex-direction: column!important;
+            flex-direction: column !important;
+
             .left-img {
-        
+
                 img {
-                    height: 292px!important;
+                    height: 292px !important;
                     filter: grayscale(100);
-                    margin-bottom: 0!important;
-        
+                    margin-bottom: 0 !important;
+
                     &:hover {
                         cursor: pointer;
                         filter: grayscale(0);
@@ -827,68 +832,68 @@
                     }
                 }
             }
-        
+
             .github-livetest {
-                width: 250px!important;
+                width: 250px !important;
                 height: 150px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 column-gap: 112px;
-        
+
                 header {
                     color: $color_violett;
-                    font-size: 20px!important;
+                    font-size: 20px !important;
                     font-weight: 700;
                 }
-        
+
                 .over-description {
-                    font-size: 14px!important;
+                    font-size: 14px !important;
                     color: $color_button;
                     font-weight: 400;
                 }
-        
+
                 p {
-                    font-size: 10px!important;
+                    font-size: 10px !important;
                     font-weight: 400;
                     margin-top: 2px;
                 }
-        
+
                 .buttons {
                     display: flex;
                     justify-content: flex-start;
                     gap: 35px;
                     margin-top: 2px;
-        
+
                     .live-btn {
                         background-color: $color_violett;
                         color: white;
                         border: none;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
                         font-size: 20px;
-        
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
                             transition: all ease-in-out 0.3s;
                         }
-        
-        
+
+
                     }
-        
+
                     .github-btn {
                         color: white;
                         background-color: $color_background;
                         border: solid 1px $color_button;
                         border-radius: 10px 10px 10px 10px;
-                        height: 40px!important;
-                        width: 100px!important;
+                        height: 40px !important;
+                        width: 100px !important;
                         font-family: 'Poppins';
                         font-size: 20px;
-        
+
                         &:hover {
                             background-color: $color_button;
                             cursor: pointer;
@@ -896,11 +901,37 @@
                         }
                     }
                 }
-        
+
             }
         }
-    
+
     }
 
 }
 
+
+@media (max-width: 440px) {
+    .background-portfolio {
+        background-color: $color_background;
+        width: 100%;
+        height: 230vh!important;
+        .content-container {
+            max-width: 1440px;
+            .blue-smoke-left-side {
+                position: absolute;
+                left: 0;
+                top: 412%!important;
+
+                img {
+                    height: 350px!important;
+                    width: 256px!important;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+    // @media (max-width: 385px)//

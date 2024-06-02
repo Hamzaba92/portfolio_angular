@@ -10,6 +10,10 @@ $color_button: #00BEE8;
     background-color: $color_background;
     position: relative;
 
+    .content-container{
+        max-width: 1440px;
+    }
+
     .portrait-container {
         position: absolute;
         top: 10%;
@@ -51,7 +55,6 @@ $color_button: #00BEE8;
     display: flex;
     justify-content: center;
     max-width: 1440px;
-    overflow: hidden;
     img {
         width: 100%;
         z-index: 1;

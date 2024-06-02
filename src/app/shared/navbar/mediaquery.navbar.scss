@@ -90,7 +90,7 @@ $hover_color: #00BEE8;
     }
 
     .header {
-        width: 100% !important; //die breite für den burger... vorübergehend hier justieren <--------
+        width: 100% !important; 
     }
 
     .burger-icon {
@@ -100,7 +100,7 @@ $hover_color: #00BEE8;
 
     .Show-BurgerMenu {
         z-index: 999;
-        position: absolute;
+        position: fixed;
         display: flex;
         height: 100vh;
         width: 100vw;

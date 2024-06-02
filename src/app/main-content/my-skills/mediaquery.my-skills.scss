@@ -176,11 +176,21 @@
     button{
         position: absolute;
         top: 212%!important;
-        left: 35%!important;        //muss später nachdem der bug gefunden wurde hier zentriert werden 
-        //right: 50%!important;
+        left: 17%!important;
     }
  }
 
+}
+
+@media (max-width: 385px) {
+    .myskills-txt-btn{
+
+        button{
+            position: absolute;
+            top: 212%!important;
+            left: 23%!important;
+        }
+     }
 }
 
 @media (max-width: 365px) {
@@ -201,7 +211,7 @@
             position: absolute;
             top: 212%!important;
             left: 35%!important;        //muss später nachdem der bug gefunden wurde hier zentriert werden 
-            //right: 50%!important;
+            right: 50%!important;
         }
      }
 

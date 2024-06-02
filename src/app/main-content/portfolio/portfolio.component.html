@@ -1,153 +1,153 @@
 <div class="background-portfolio" id="anchor_portfolio">
-    @if (languageService.langDE) {
-    <section class="overcontainer">
-        <div class="header" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="title">
-                <div class="left-bar"></div>
-                <span>Portfolio</span>
-                <div class="right-bar"></div>
+    <main class="content-container">
+        @if (languageService.langDE) {
+        <section class="overcontainer">
+            <div class="header" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="title">
+                    <div class="left-bar"></div>
+                    <span>Portfolio</span>
+                    <div class="right-bar"></div>
+                </div>
+                <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
             </div>
-            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+        </section>
+
+        <section class="projects">
+            <section class="join-conti">
+                <div class="left-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/flipped_macbook_join.png">
+                </div>
+                <div class="github-livetest">
+                    <header class="join">
+                        Join
+                    </header>
+                    <span class="over-description">
+                        HTML | JavaScript | CSS
+                    </span>
+                    <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
+                        assign users and categories.</p>
+                    <div class="buttons">
+                        <button class="live-btn">Live Test</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="el-pollo-loco-conti">
+                <div class="livetest-github">
+                    <header>El Pollo-Locco</header>
+                    <span>HTML | JavaScript | CSS</span>
+                    <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa
+                        to fight against the crazy hen.</p>
+                    <div class="buttons">
+                        <button class="live-btn-pepe">Live Test</button>
+                        <button class="github-btn-pepe">Github</button>
+                    </div>
+                </div>
+                <div class="right-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/Macbook_El_pollo_loco.png">
+                </div>
+            </section>
+
+            <section class="portfolio-conti">
+                <div class="left-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_template_raw_flipped_left.png">
+                </div>
+                <div class="github-livetest">
+                    <header class="Portfolio">
+                        Portfolio
+                    </header>
+                    <span class="over-description">
+                        SCSS | TypeScript | Angular | HTML
+                    </span>
+                    <p>Built with Angular, this modern, responsive, and visually appealing portfolio site effectively
+                        showcases projects and skills with a smooth user experience and interactive features.</p>
+                    <div class="buttons">
+                        <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        }@else {
+        <section class="overcontainer">
+            <div class="header" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="title">
+                    <div class="left-bar"></div>
+                    <span>Portfolio</span>
+                    <div class="right-bar"></div>
+                </div>
+                <p>
+                    Entdecke hier eine Auswahl meiner Arbeit - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <section class="join-conti">
+                <div class="left-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/flipped_macbook_join.png">
+                </div>
+                <div class="github-livetest">
+                    <header class="join">
+                        Join
+                    </header>
+                    <span class="over-description">
+                        HTML | JavaScript | CSS
+                    </span>
+                    <p>
+                        Ein Task-Manager, der vom Kanban-System inspiriert ist. Aufgaben können per Drag-and-Drop erstellt und organisiert sowie Benutzern und Kategorien zugewiesen werden.
+                    </p>
+                    <div class="buttons">
+                        <button class="live-btn">Live Test</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="el-pollo-loco-conti">
+                <div class="livetest-github">
+                    <header>El Pollo-Locco</header>
+                    <span>HTML | JavaScript | CSS</span>
+                    <p>
+                    
+                        Ein Spiel zum Springen, Laufen und Werfen, basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-flaschen zu finden, um gegen das verrückte Huhn zu kämpfen.
+                    </p>
+                    <div class="buttons">
+                        <button class="live-btn-pepe">Live Test</button>
+                        <button class="github-btn-pepe">Github</button>
+                    </div>
+                </div>
+                <div class="right-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/Macbook_El_pollo_loco.png">
+                </div>
+            </section>
+
+            <section class="portfolio-conti">
+                <div class="left-img">
+                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook.png">
+                </div>
+                <div class="github-livetest">
+                    <header class="Portfolio">
+                        Portfolio
+                    </header>
+                    <span class="over-description">
+                        SCSS | TypeScript | Angular | HTML
+                    </span>
+                    <p>
+                    
+                        Mit Angular entwickelt, präsentiert diese moderne, reaktionsschnelle und visuell ansprechende Portfolio-Website effektiv Projekte und Fähigkeiten und bietet eine reibungslose Benutzererfahrung sowie interaktive Funktionen.
+                    </p>
+                    <div class="buttons">
+                        <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
+                        <button class="github-btn">Github</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        }
+        <div class="blue-smoke-left-side">
+            <img src="./../../../assets/portfolio_macbook_templates/blue_smoke_portfolio.png">
         </div>
-    </section>
-
-    <section class="projects">
-        <section class="join-conti">
-            <div class="left-img">
-                <img src="./../../../assets/portfolio_macbook_templates/flipped_macbook_join.png">
-            </div>
-            <div class="github-livetest">
-                <header class="join">
-                    Join
-                </header>
-                <span class="over-description">
-                    HTML | JavaScript | CSS
-                </span>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
-                    assign users and categories.</p>
-                <div class="buttons">
-                    <button class="live-btn">Live Test</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="el-pollo-loco-conti">
-            <div class="livetest-github">
-                <header>El Pollo-Locco</header>
-                <span>HTML | JavaScript | CSS</span>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa
-                    to fight against the crazy hen.</p>
-                <div class="buttons">
-                    <button class="live-btn-pepe">Live Test</button>
-                    <button class="github-btn-pepe">Github</button>
-                </div>
-            </div>
-            <div class="right-img">
-                <img src="./../../../assets/portfolio_macbook_templates/Macbook_El_pollo_loco.png">
-            </div>
-        </section>
-
-        <section class="portfolio-conti">
-            <div class="left-img">
-                <img src="./../../../assets/portfolio_macbook_templates/portfolio_template_raw_flipped_left.png">
-            </div>
-            <div class="github-livetest">
-                <header class="Portfolio">
-                    Portfolio
-                </header>
-                <span class="over-description">
-                    SCSS | TypeScript | Angular | HTML
-                </span>
-                <p>Built with Angular, this modern, responsive, and visually appealing portfolio site effectively
-                    showcases projects and skills with a smooth user experience and interactive features.</p>
-                <div class="buttons">
-                    <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </section>
-    </section>
-    }@else {
-    <section class="overcontainer">
-        <div class="header" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="title">
-                <div class="left-bar"></div>
-                <span>Portfolio</span>
-                <div class="right-bar"></div>
-            </div>
-            <p>
-                Entdecke hier eine Auswahl meiner Arbeit - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.
-            </p>
-        </div>
-    </section>
-
-    <section class="projects">
-        <section class="join-conti">
-            <div class="left-img">
-                <img src="./../../../assets/portfolio_macbook_templates/flipped_macbook_join.png">
-            </div>
-            <div class="github-livetest">
-                <header class="join">
-                    Join
-                </header>
-                <span class="over-description">
-                    HTML | JavaScript | CSS
-                </span>
-                <p>
-                    Ein Task-Manager, der vom Kanban-System inspiriert ist. Aufgaben können per Drag-and-Drop erstellt und organisiert sowie Benutzern und Kategorien zugewiesen werden.
-                </p>
-                <div class="buttons">
-                    <button class="live-btn">Live Test</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="el-pollo-loco-conti">
-            <div class="livetest-github">
-                <header>El Pollo-Locco</header>
-                <span>HTML | JavaScript | CSS</span>
-                <p>
-                
-                    Ein Spiel zum Springen, Laufen und Werfen, basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-flaschen zu finden, um gegen das verrückte Huhn zu kämpfen.
-                </p>
-                <div class="buttons">
-                    <button class="live-btn-pepe">Live Test</button>
-                    <button class="github-btn-pepe">Github</button>
-                </div>
-            </div>
-            <div class="right-img">
-                <img src="./../../../assets/portfolio_macbook_templates/Macbook_El_pollo_loco.png">
-            </div>
-        </section>
-
-        <section class="portfolio-conti">
-            <div class="left-img">
-                <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook.png">
-            </div>
-            <div class="github-livetest">
-                <header class="Portfolio">
-                    Portfolio
-                </header>
-                <span class="over-description">
-                    SCSS | TypeScript | Angular | HTML
-                </span>
-                <p>
-                
-                    Mit Angular entwickelt, präsentiert diese moderne, reaktionsschnelle und visuell ansprechende Portfolio-Website effektiv Projekte und Fähigkeiten und bietet eine reibungslose Benutzererfahrung sowie interaktive Funktionen.
-                </p>
-                <div class="buttons">
-                    <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </section>
-
-    </section>
-    }
-
-    <div class="blue-smoke-left-side">
-        <img src="./../../../assets/portfolio_macbook_templates/blue_smoke_portfolio.png">
-    </div>
+    </main>
 </div>
