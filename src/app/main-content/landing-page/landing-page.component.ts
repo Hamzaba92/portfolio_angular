@@ -12,4 +12,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class LandingPageComponent {
 
+
+  openLinkLinkedIn(){
+    window.open('https://www.linkedin.com');
+  }
+
+  openLinkGithub(){
+    window.open('https://github.com/Hamzaba92');
+  }
 }
