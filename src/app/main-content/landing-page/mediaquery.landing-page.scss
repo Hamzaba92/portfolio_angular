@@ -1,3 +1,80 @@
+
+@media (max-width: 1750px) {
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 170px!important;
+        }
+    }  
+
+    .portrait-container {
+        position: absolute;
+        top: 16%!important;
+        left: -25px;
+        width: 50%;
+        height: 35%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+}
+
+@media (max-width: 1580px) {
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 210px!important;
+        }
+    }  
+
+    .portrait-container {
+
+
+        .leftbehindfoto-blue {
+            width: 89%;
+            height: 118%;
+            position: absolute;
+            left: -16%;
+            top: 33% !important;
+            transform: rotate(91deg);
+        }
+
+        .rightbehindfoto-turquise {
+            width: 69%;
+            height: 170%;
+            position: absolute;
+            right: 5%;
+            top: -14% !important;
+            transform: rotate(66deg);
+            z-index: -1;
+        }
+
+    }
+
+}
+
+@media (max-width:1405px) {
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 250px!important;
+        }
+    }  
+}
+
+
 @media (max-width: 1300px) {
     .iam-dev-txt {
         width: 700px;
@@ -36,7 +113,7 @@
         img {
             width: 100%;
             z-index: 1;
-            margin-top: 205px !important;
+            margin-top: 260px !important;
         }
     }
 }
@@ -71,16 +148,6 @@
                 font-size: 42px;
                 line-height: 54px;
             }
-        }
-    }
-
-    .vectorpicture-right-side {
-        display: flex;
-
-        img {
-            width: 100%;
-            z-index: 1;
-            margin-top: 260px !important;
         }
     }
 
@@ -221,7 +288,7 @@
         justify-content: space-between;
         font-family: 'Poppins';
         height: 165px;
-        max-width: 1440px;
+        max-width: 1920px;
         width: 100%;
 
         .overcontainer-left {
@@ -443,7 +510,7 @@
         font-family: 'Poppins';
         align-items: flex-end!important;
         height: 80px!important;
-        max-width: 1440px;
+        max-width: 1920px;
         width: 100%;
 
         .overcontainer-left {

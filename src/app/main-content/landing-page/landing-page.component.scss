@@ -11,12 +11,12 @@ $color_button: #00BEE8;
     position: relative;
 
     .content-container{
-        max-width: 1440px;
+        max-width: 1920px;
     }
 
     .portrait-container {
         position: absolute;
-        top: 10%;
+        top: 14%;
         left: -25px;
         width: 50%;
         height: 35%;
@@ -54,12 +54,11 @@ $color_button: #00BEE8;
 .vectorpicture-right-side {
     display: flex;
     justify-content: center;
-    max-width: 1440px;
     img {
         width: 100%;
         z-index: 1;
         margin-top: 125px;
-        max-width: 1440px;
+        max-width: 1920px;
     }
 }
 
@@ -68,7 +67,7 @@ $color_button: #00BEE8;
     height: 172px;
     font-family: 'Poppins';
     position: absolute;
-    left: 37%;
+    left: 33%;
     top: 35%;
     z-index: 2;
     display: flex;
@@ -140,8 +139,8 @@ $color_button: #00BEE8;
     justify-content: space-between;
     font-family: 'Poppins';
     height: 165px;
-    max-width: 1440px;
-    width: 100%;
+    max-width: 1920px;
+    width: 95%;
 
     .overcontainer-left {
         display: flex;

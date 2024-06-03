@@ -101,7 +101,7 @@
 
 @media (max-width: 500px) {
     footer {
-        width: 100%;
+        width: 95%;
         height: 200px;
         background-color: $color_background;
         border-top: 1.5px solid $color_button;
@@ -162,7 +162,6 @@
                         text-decoration: none;
                         color: white;
                         font-size: 11px!important;
-                        padding-left: 17px;
                         &:hover {
                             cursor: pointer;
                             text-decoration: underline;
