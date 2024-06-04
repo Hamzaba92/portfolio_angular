@@ -1,4 +1,4 @@
-@media (max-width: 1150px) {
+@media (max-width: 1350px) {
     .header {
         width: 100%;
         padding-top: 115px;
@@ -34,7 +34,6 @@
             margin: 0;
             color: white;
             display: flex;
-            justify-content: center !important;
             font-size: 16px;
             font-family: 'Poppins';
             margin-left: 10px !important;
@@ -55,7 +54,7 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center !important;
             align-items: center;
             z-index: 1;
 
@@ -149,7 +148,7 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center !important;
             align-items: center;
             z-index: 1;
 
@@ -250,7 +249,7 @@
             height: 340px;
             width: 1100px;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center !important;
             align-items: center;
             z-index: 1;
 
@@ -346,7 +345,7 @@
 
 
 
-@media (max-width: 920px) {
+@media (max-width: 975px) {
     .header {
         width: 100%;
         padding-top: 115px;
@@ -382,11 +381,12 @@
             margin: 0;
             color: white;
             display: flex;
-            justify-content: center !important;
-            font-size: 16px;
+            font-size: 12px !important;
             font-family: 'Poppins';
-            margin-left: 10px !important;
-            margin-right: 0px !important;
+            right: 6% !important;
+            width: 69% !important;
+            position: absolute;
+            text-align: end !important;
         }
     }
 
@@ -396,7 +396,7 @@
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center;
             align-items: center;
             z-index: 1;
 
@@ -425,7 +425,7 @@
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center;
             align-items: center;
             z-index: 1;
 
@@ -526,7 +526,7 @@
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
+            justify-content: center;
             align-items: center;
             z-index: 1;
 
@@ -625,10 +625,6 @@
 
 @media (max-width: 690px) {
 
-    .background-portfolio {
-        height: 200vh !important;
-    }
-
     .header {
         width: 100%;
         padding-top: 115px;
@@ -667,22 +663,27 @@
             justify-content: center !important;
             font-size: 10px !important;
             font-family: 'Poppins';
-            margin-left: 10px !important;
-            margin-right: 0px !important;
+
         }
     }
 
     .projects {
+        font-family: "Poppins";
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 150px;
 
         .join-conti {
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
             flex-direction: column !important;
-            padding-bottom: 250px !important;
+            padding-top: 70px;
 
             .left-img {
 
@@ -709,11 +710,9 @@
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
             flex-direction: column-reverse !important;
-            padding-bottom: 50px !important;
 
             .livetest-github {
                 width: 250px !important;
@@ -812,7 +811,6 @@
             height: 340px;
             width: 660px !important;
             display: flex;
-            justify-content: space-evenly !important;
             align-items: center;
             z-index: 1;
             flex-direction: column !important;
@@ -910,21 +908,351 @@
 }
 
 
-@media (max-width: 440px) {
+@media (max-width: 475px) {
     .background-portfolio {
         background-color: $color_background;
         width: 100%;
-        height: 230vh!important;
+
         .content-container {
-            max-width: 1440px;
-            .blue-smoke-left-side {
-                position: absolute;
-                left: 0;
-                top: 412%!important;
+            max-width: 1920px;
+
+            .overcontainer {
+                .header {
+                    width: 100%;
+                    padding-top: 115px;
+
+                    .title {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        gap: 25px;
+
+                        .left-bar {
+                            display: none;
+                        }
+
+                        span {
+                            font-family: 'Poppins';
+                            font-size: 50px;
+                            color: white;
+                            font-weight: 700;
+                        }
+
+                        .right-bar {
+                            height: 2px;
+                            width: 100px;
+                            background-color: $color_violett;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        color: white;
+                        display: flex;
+                        justify-content: center !important;
+                        font-size: 10px !important;
+                        font-family: 'Poppins';
+
+                    }
+                }
+            }
+        }
+
+        .blue-smoke-left-side {
+            position: absolute;
+            left: 0;
+            top: 370% !important;
+
+            img {
+                height: 350px !important;
+                width: 256px !important;
+            }
+
+        }
+    }
+
+}
+
+
+
+@media (max-width: 410px) {
+    .background-portfolio {
+        background-color: $color_background;
+        width: 100%;
+
+        .content-container {
+            max-width: 1920px;
+
+            .header {
+                width: 100%;
+                padding-top: 115px;
+
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 25px;
+
+                    .left-bar {
+                        display: none;
+                    }
+
+                    span {
+                        font-family: 'Poppins';
+                        font-size: 48px !important;
+                        color: white;
+                        font-weight: 700;
+                    }
+
+                    .right-bar {
+                        height: 2px;
+                        width: 50px !important;
+                        background-color: $color_violett;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    color: white;
+                    display: flex;
+                    font-size: 10px !important;
+                    font-family: 'Poppins';
+                    right: 6% !important;
+                    width: 69% !important;
+                    position: absolute;
+                    text-align: end !important;
+                }
+            }
+
+        }
+    }
+
+    .projects {
+
+
+        .join-conti {
+            height: 340px;
+            width: 660px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            .left-img {
 
                 img {
-                    height: 350px!important;
-                    width: 256px!important;
+                    height: 242px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: grayscale(0);
+                        transform: scale(1.15);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
+            }
+
+            .github-livetest {
+                width: 250px !important;
+            }
+        }
+
+        .el-pollo-loco-conti {
+            height: 340px;
+            width: 660px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            .livetest-github {
+                width: 250px !important;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                column-gap: 112px;
+
+                header {
+                    color: $color_violett;
+                    font-size: 28px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                span {
+                    font-size: 19px;
+                    color: $color_button;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-top: 2px;
+                    display: flex;
+                    text-align: end;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: flex-end;
+                gap: 35px;
+                margin-top: 2px;
+
+                .live-btn-pepe {
+                    background-color: $color_violett;
+                    color: white;
+                    border: none;
+                    border-radius: 10px 10px 10px 10px;
+                    height: 50px;
+                    width: 128px;
+                    font-family: 'Poppins';
+                    font-size: 20px;
+
+                    &:hover {
+                        background-color: $color_button;
+                        cursor: pointer;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+
+                .github-btn-pepe {
+                    color: white;
+                    background-color: $color_background;
+                    border: solid 1px $color_button;
+                    border-radius: 10px 10px 10px 10px;
+                    height: 50px;
+                    width: 128px;
+                    font-family: 'Poppins';
+                    font-size: 20px;
+
+                    &:hover {
+                        background-color: $color_button;
+                        cursor: pointer;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+            }
+
+            .right-img {
+                img {
+                    height: 242px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        transform: scale(1.15);
+                        filter: grayscale(0);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
+
+            }
+
+        }
+
+        .portfolio-conti {
+            height: 340px;
+            width: 660px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            .left-img {
+
+                img {
+                    height: 242px !important;
+                    filter: grayscale(100);
+                    margin-bottom: 35px;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: grayscale(0);
+                        transform: scale(1.15);
+                        transition: all ease-in-out 0.7s;
+                    }
+                }
+            }
+
+            .github-livetest {
+                width: 250px !important;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                column-gap: 112px;
+
+                header {
+                    color: $color_violett;
+                    font-size: 20px !important;
+                    font-weight: 700;
+                }
+
+                .over-description {
+                    font-size: 14px !important;
+                    color: $color_button;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 10px !important;
+                    font-weight: 400;
+                    margin-top: 2px;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 35px;
+                    margin-top: 2px;
+
+                    .live-btn {
+                        background-color: $color_violett;
+                        color: white;
+                        border: none;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 40px !important;
+                        width: 100px !important;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+
+
+                    }
+
+                    .github-btn {
+                        color: white;
+                        background-color: $color_background;
+                        border: solid 1px $color_button;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 40px !important;
+                        width: 100px !important;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
                 }
 
             }
@@ -933,5 +1261,3 @@
     }
 
 }
-
-    // @media (max-width: 385px)//

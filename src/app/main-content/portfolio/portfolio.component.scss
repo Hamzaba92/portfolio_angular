@@ -7,16 +7,16 @@ $color_button: #00BEE8;
 
 
 .background-portfolio {
-    height: 170vh;
+    min-height: 100vh;
     background-color: $color_background;
     width: 100%;
 
     .content-container {
-        max-width: 1440px;
+        max-width: 1920px;
         .blue-smoke-left-side {
             position: absolute;
             left: 0;
-            top: 400%;
+            top: 355%;
             img {
                 height: 480px;
                 width: 390px;
@@ -24,13 +24,11 @@ $color_button: #00BEE8;
 
         }
 
-
         .overcontainer {
-            max-width: 1440px;
-
+            max-width: 1920px;
+            padding-top: 115px;
             .header {
                 width: 100%;
-                padding-top: 115px;
                 
                 .title {
                     display: flex;
@@ -66,7 +64,7 @@ $color_button: #00BEE8;
                     justify-content: flex-end;
                     font-size: 16px;
                     font-family: 'Poppins';
-                    margin-right: 185px;
+                    width: 95%;
                 }
             }
         }
@@ -84,9 +82,9 @@ $color_button: #00BEE8;
 
             .join-conti {
                 height: 340px;
-                width: 1100px;
+                width: 1920px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
                 z-index: 7;
 
@@ -180,9 +178,9 @@ $color_button: #00BEE8;
 
             .el-pollo-loco-conti {
                 height: 340px;
-                width: 1100px;
+                width: 1920px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
                 z-index: 7;
 
@@ -283,9 +281,9 @@ $color_button: #00BEE8;
 
         .portfolio-conti {
             height: 340px;
-            width: 1100px;
+            width: 1920px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             z-index: 7;
 

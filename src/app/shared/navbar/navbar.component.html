@@ -19,7 +19,7 @@
 
             <div class="language-container">
                 <a [ngClass]="{'clicked-for-EN-DE-mirror': languageService.langDE}" (click)="languageService.changeLanguage('de')" style="cursor: pointer;">EN</a>
-                <div></div>
+                <div class="bar"></div>
                 <a [ngClass]="{'clicked-for-EN-DE': languageService.langEN}" (click)="languageService.changeLanguage('en')" style="cursor: pointer;">DE</a>
             </div>
             @if (languageService.langDE) {

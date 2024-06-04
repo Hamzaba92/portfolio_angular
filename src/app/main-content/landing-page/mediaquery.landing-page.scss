@@ -1,3 +1,16 @@
+@media (max-width: 2000px) {
+    .portrait-container {
+        position: absolute;
+        top: 18%!important;
+        left: -25px;
+        width: 50%;
+        height: 35%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+}
 
 @media (max-width: 1750px) {
     .vectorpicture-right-side {
@@ -151,6 +164,18 @@
         }
     }
 
+}
+
+@media (max-width: 905px) {
+    .vectorpicture-right-side {
+        display: flex;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            margin-top: 320px !important;
+        }
+    }  
 }
 
 @media (max-width: 830px) {
@@ -545,6 +570,6 @@
 
 @media (max-width: 340px) {
     .iam-dev-txt{
-        left: 21%!important;
+        left: 17%!important;
     }
 }

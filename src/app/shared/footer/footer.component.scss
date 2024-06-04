@@ -10,18 +10,22 @@ footer {
     background-color: $color_background;
     border-top: 1.5px solid $color_button;
     font-family: 'Poppins';
-
+    position: relative;
+    z-index: 9999;
 
     .max-width-container {
-        max-width: 1440px;
+        max-width: 1920px;
+        width: 95%;
         height: 100%;
         color: white;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+
         .overcontainer-left {
             text-decoration: none;
+            padding-left: 5%;
 
             p {
                 margin: 0;

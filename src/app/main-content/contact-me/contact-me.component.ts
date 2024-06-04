@@ -69,7 +69,10 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.validateName();
+    this.validateEmail();
+    this.validateMessage();
+    if (ngForm.submitted && ngForm.form.valid && this.isFormValid() && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -82,10 +85,10 @@ export class ContactMeComponent {
             this.successfullysend();
             this.resetCheckbox();
             console.log('erfolgreich gesendet!')
-
+            ngForm.reset();
           },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.isFormValid() && this.mailTest) {
       ngForm.resetForm();
     } else {
       console.log('Form invalid or not submitted.');
@@ -95,20 +98,26 @@ export class ContactMeComponent {
     }
   }
 
+
+  isFormValid() {
+    return this.isNameValid && this.isEmailValid && this.isMessageValid && this.checkbox;
+  }
+
   acceptCheckbox() {
-    if (this.checkbox) {
-      this.checkbox = false
-    }
-    else {
-      this.checkbox = true
-    }
-    this.isCheckboxChecked = !this.isCheckboxChecked;
+    this.checkbox = !this.checkbox;
+    this.errorMsgPrivacy = !this.checkbox;
   }
 
   successfullysend(){
+    if(this.languageService.langDE){
     this.mailSuccessfullySend = true;
     this.showSuccessMessage('Email successfully sent!');
+  }else{
+    this.mailSuccessfullySend = true;
+    this.showSuccessMessage('Email erfolgreich versendet!')
   }
+
+}
 
   showSuccessMessage(message: string) {
     this.successMessage = message;
@@ -116,6 +125,9 @@ export class ContactMeComponent {
       this.successMessage = '';
       this.mailSuccessfullySend = false;
     }, 5000); 
+    this.borderGreenMessage = false;
+    this.borderGreenName = false;
+    this.borderGreenMail = false;
   }
 
   resetCheckbox() {
@@ -125,9 +137,9 @@ export class ContactMeComponent {
 
   sendForm() {
     if (this.checkbox) {
-      this.errorMsgPrivacy = true;
-    } else {
       this.errorMsgPrivacy = false;
+    } else {
+      this.errorMsgPrivacy = true;
     }
   }
 
@@ -143,7 +155,7 @@ export class ContactMeComponent {
   }
 
   validateName() {
-    const namePattern = /^[a-zA-Z]{3,}(?: [a-zA-Z]{2,})?$/;
+    const namePattern = /^[a-zA-ZäöüÄÖÜß]{3,}(?: [a-zA-ZäöüÄÖÜß]{2,})?$/;
     this.isNameValid = namePattern.test(this.contactData.name);
     this.updateStyles();
   }

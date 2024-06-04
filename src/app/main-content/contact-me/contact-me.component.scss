@@ -5,18 +5,18 @@ $color_button: #00BEE8;
 @import './mediaquery.contact-me.scss';
 
 .background-contact-me {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $color_background;
     width: 100%;
 
     .overcontainer-max-width {
-        max-width: 1440px;
+        max-width: 1920px;
+        padding-top: 110px;
 
         header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding-top: 115px;
             gap: 35px;
 
             .left-bar {
@@ -33,66 +33,68 @@ $color_button: #00BEE8;
             }
         }
 
-        
-            .left-side {
-                width: 50vw;
-                display: flex;
-                z-index: 1;
-                flex-direction: column;
 
-                .left-side-txt {
-                    margin-top: 60px;
+        .left-side {
+            width: 50vw;
+            display: flex;
+            z-index: 1;
+            flex-direction: column;
 
-                    .subtitle {
-                        font-size: 32px;
-                        font-weight: 700;
-                        font-family: 'Poppins';
-                        color: white;
-                        padding-left: 89px;
-                        max-width: 473px;
-                        min-height: 48px;
-                        display: flex;
-                    }
+            .left-side-txt {
+                margin-top: 60px;
 
-                    .first {
-                        width: 473px;
-                        height: 57px;
-                        color: white;
-                        font-family: 'Poppins';
-                        margin-left: 89px;
-                        font-size: 16px;
-                        max-width: 473px;
-                        min-height: 48px;
-                    }
+                .subtitle {
+                    font-size: 32px;
+                    font-weight: 700;
+                    font-family: 'Poppins';
+                    color: white;
+                    padding-left: 89px;
+                    max-width: 473px;
+                    min-height: 48px;
+                    display: flex;
+                }
 
-                    .second {
-                        width: 473px;
-                        height: 57px;
-                        color: white;
-                        font-family: 'Poppins';
-                        margin-left: 89px;
-                        font-size: 16px;
-                        margin-top: 32px;
-                        max-width: 473px;
-                        min-height: 48px;
-                    }
+                .first {
+                    width: 473px;
+                    height: 57px;
+                    color: white;
+                    font-family: 'Poppins';
+                    margin-left: 89px;
+                    font-size: 16px;
+                    max-width: 473px;
+                    min-height: 48px;
+                }
+
+                .second {
+                    width: 473px;
+                    height: 57px;
+                    color: white;
+                    font-family: 'Poppins';
+                    margin-left: 89px;
+                    font-size: 16px;
+                    margin-top: 32px;
+                    max-width: 473px;
+                    min-height: 48px;
                 }
             }
+        }
 
-            .right-side {
-                width: 50vw;
+        .right-side {
+            width: 45vw;
+            display: flex;
+            justify-content: flex-end;
+
+            .overcontainer {
+                width: 490px;
+                height: 350px;
                 display: flex;
-                justify-content: center;
+                font-family: 'Poppins';
+                flex-direction: column;
+                align-items: end;
 
-                .overcontainer {
-                    width: 490px;
-                    height: 350px;
-                    display: flex;
-                    font-family: 'Poppins';
-                    flex-direction: column;
-                    align-items: end;
-
-                    .back-to-landingpage-btn {
+                .back-to-landingpage-btn {
+                   
+                    img {
                         height: 39px;
                         width: 39px;
                         object-fit: contain;
@@ -104,149 +106,146 @@ $color_button: #00BEE8;
                         }
                     }
 
-                    form {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        gap: 12px;
-                        height: 500px;
-                        align-items: center;
+                }
+            
 
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+                height: 500px;
+                align-items: end;
+                z-index: 700;
 
-                        button {
-                            width: 182px;
-                            height: 56px;
-                            background-color: #00BEE8;
-                            color: white;
-                            font-family: 'Poppins';
-                            border: none;
-                            border-radius: 10px 10px 10px 10px;
-                            font-size: 18px;
-
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-
-                        input:-webkit-autofill,
-                        input:-webkit-autofill:hover,
-                        input:-webkit-autofill:focus,
-                        input:-webkit-autofill:active {
-                            -webkit-box-shadow: 0 0 0px 1000px #141D2F inset;
-                            box-shadow: 0 0 0px 1000px #141D2F inset;
-                            background-color: #141D2F;
-                            color: white;
-                        }
-
-                        input {
-                            width: 435px;
-                            height: 38px;
-                            color: white !important;
-                            padding: 10px 10px 10px 15px;
-                            font-family: 'Poppins';
-                            background-color: $color_background;
-                            border-color: $color_violett;
-                            border-radius: 10px 10px 10px 10px;
-
-                            &::-webkit-autofill:focus,
-                            :-webkit-autofill:hover,
-                            :-webkit-autofill:focus,
-                            :-webkit-autofill:active {
-                                background-color: #141D2F !important;
-                            }
-
-                            &:focus {
-                                outline: none;
-                                caret-color: #4B47FF;
-                            }
-
-                            &:hover {
-                                border-color: #00BEE8;
-                                cursor: pointer;
-                            }
-
-                            &::placeholder {
-                                color: white;
-                            }
-                        }
-
-                        textarea {
-                            width: 464px;
-                            box-sizing: border-box;
-                            resize: none;
-                            padding: 15px 10px 10px 15px;
-                            min-height: 124px;
-                            font-family: 'Poppins';
-                            background-color: $color_background;
-                            border-color: $color_violett;
-                            border-radius: 10px 10px 10px 10px;
-                            color: white;
-
-                            &:focus {
-                                outline: none;
-                                caret-color: #4B47FF;
-                            }
-
-                            &:hover {
-                                border-color: #00BEE8;
-                                cursor: pointer;
-                            }
-
-                            &::placeholder {
-                                color: white;
-                            }
-                        }
-
-                        .checkbox-cont {
-                            display: flex;
-                            width: 464px;
-                            color: white;
-                            align-items: center;
-                            column-gap: 5px;
-
-                            img {
-                                height: 20px;
-                                width: 20px;
-                                object-fit: contain;
-                                
-                                &:hover {
-                                    cursor: pointer;
-                                }
-                            }
-
-                            a {
-                                text-decoration: none;
-                                color: #4B47FF;
-
-                                &:hover {
-                                    text-decoration: underline $color_violett;
-                                }
-                            }
-
-                            span {
-                                font-size: 10px;
-                            }
-
-
-                        }
+                button {
+                    width: 182px;
+                    height: 56px;
+                    background-color: #00BEE8;
+                    color: white;
+                    font-family: 'Poppins';
+                    border: none;
+                    border-radius: 10px 10px 10px 10px;
+                    font-size: 18px;
+                    margin-right: 130px;
+                    &:hover {
+                        cursor: pointer;
                     }
                 }
 
-            }
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                    -webkit-box-shadow: 0 0 0px 1000px #141D2F inset;
+                    box-shadow: 0 0 0px 1000px #141D2F inset;
+                    background-color: #141D2F;
+                    color: white!important;
+                    -webkit-text-fill-color: white !important;
+                }
 
-        
+                input {
+                    width: 435px;
+                    height: 38px;
+                    color: white !important;
+                    padding: 10px 10px 10px 15px;
+                    font-family: 'Poppins';
+                    background-color: $color_background;
+                    border-color: $color_violett;
+                    border-radius: 10px 10px 10px 10px;
 
-        .blue-smoke-left {
-            position: absolute;
-            left: 0;
-            top: 494.6%;
+                    &::-webkit-autofill:focus,
+                    :-webkit-autofill:hover,
+                    :-webkit-autofill:focus,
+                    :-webkit-autofill:active {
+                        background-color: #141D2F !important;
+                    }
 
-            img {
-                height: 524px;
-                width: 438px;
+                    &:focus {
+                        outline: none;
+                        caret-color: #4B47FF;
+                    }
 
+                    &:hover {
+                        border-color: #00BEE8;
+                        cursor: pointer;
+                    }
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                textarea {
+                    width: 464px;
+                    box-sizing: border-box;
+                    resize: none;
+                    padding: 15px 10px 10px 15px;
+                    min-height: 124px;
+                    font-family: 'Poppins';
+                    background-color: $color_background;
+                    border-color: $color_violett;
+                    border-radius: 10px 10px 10px 10px;
+                    color: white;
+
+                    &:focus {
+                        outline: none;
+                        caret-color: #4B47FF;
+                    }
+
+                    &:hover {
+                        border-color: #00BEE8;
+                        cursor: pointer;
+                    }
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                .checkbox-cont {
+                    display: flex;
+                    width: 464px;
+                    color: white;
+                    align-items: center;
+                    column-gap: 5px;
+
+                    img {
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #4B47FF;
+
+                        &:hover {
+                            text-decoration: underline $color_violett;
+                        }
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+
+
+                }
             }
         }
+
+    }
+
+
+
+    .blue-smoke-left {
+        display: flex;
+        height: 500px;
+        width: 100%;
 
     }
 
@@ -266,7 +265,11 @@ $color_button: #00BEE8;
     color: red;
     font-family: 'Poppins';
     margin-top: -5px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+
 
 .send-btn {
     opacity: 0.4 !important;
@@ -286,6 +289,7 @@ $color_button: #00BEE8;
 
 .border-green-success {
     border-color: greenyellow !important;
+ 
 }
 
 .border-red-fail {
@@ -310,7 +314,7 @@ $color_button: #00BEE8;
 #errorMessage {
     color: red;
     font-size: 10px;
-    padding-right: 158px;
+    padding-right: 135px;
     margin-top: -11px;
 }
 
@@ -364,5 +368,9 @@ $color_button: #00BEE8;
     font-family: 'Poppins';
     color: rgb(164, 235, 59);
     font-weight: 500;
+    display: flex;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
 
 }

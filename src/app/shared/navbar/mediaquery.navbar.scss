@@ -20,7 +20,7 @@ $hover_color: #00BEE8;
     div {
         width: 2px;
         height: 18px;
-        background-color: white;
+        background-color: white!important;
         justify-content: center;
     }
 }
@@ -79,7 +79,24 @@ $hover_color: #00BEE8;
 }
 
 
-
+@media (max-width: 680px) {
+    .right-section {
+        width: 390px;
+        max-height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-left: 78px;
+        a {
+            text-decoration: none;
+            color: white;
+    
+            &:hover {
+                color: $hover_color;
+            }
+        }
+    }
+}
 
 @media (max-width: 560px) {
     .right-section {
@@ -92,7 +109,7 @@ $hover_color: #00BEE8;
 
     .burger-icon {
         display: flex;
-        padding-right: 30px;
+        padding-right: 5%;
     }
 
     .Show-BurgerMenu {

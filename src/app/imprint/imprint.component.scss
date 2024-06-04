@@ -5,7 +5,7 @@ $color_button: #00BEE8;
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     overflow: hidden;
     background-color: $color_background;
@@ -14,8 +14,18 @@ section {
 .wrapperLegal {
     display: flex;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     min-width: 320px;
+}
+
+.legal {
+    max-width: 1920px;
+    text-wrap: wrap;
+    overflow-y: scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 100px;
 }
 
 p {
@@ -51,15 +61,7 @@ strong {
     color: white;
 }
 
-.legal {
-    height: max-content;
-    text-wrap: wrap;
-    overflow-y: scroll;
-    padding-left: 43px;
-    padding-right: 32px;
-    padding-bottom: 5%;
-    padding-top: 86px;
-}
+
 
 ::-webkit-scrollbar {
     overflow-y: hidden;

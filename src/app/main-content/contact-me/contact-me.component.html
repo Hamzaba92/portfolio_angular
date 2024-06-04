@@ -46,17 +46,19 @@
                         <div class="checkbox-cont">
                             <img *ngIf="checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
                             <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
-                            <span>I've read the<a href="privacy-policy">privacy-policy</a> gelesen und stimme der Verarbeitung zu.</span>
+                            <span>I've read the<a href="privacy-policy">privacy-policy</a>and agree to the processing of my data as outlined.</span>
                         </div>
-                        <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">and agree to the processing of my data as outlined.</span>
+                        <span id="errorPrivacy" [ngClass]="{'d-none': !errorMsgPrivacy}">Please accept the privacy policy.</span>
                     
                         <div *ngIf="successMessage" class="success-message">
                             {{ successMessage }}
                         </div>
 
-                        <button type="submit" class="send-btn click-effect" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
+                        <button type="submit" class="send-btn click-effect" [disabled]="!isFormValid()" [ngClass]="{'send-btn': !checkbox}">Senden</button>
                     </form>
-                        <img class="back-to-landingpage-btn" onclick="location.href='#'" src="./../../../assets/go_up_button.png">
+                    <div class="back-to-landingpage-btn">
+                        <img onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+                    </div>
                 </div>
                 </aside>
             </div>
@@ -80,14 +82,14 @@
 
                     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                         <div class="inputfieldName">
-                        <input required id="input_name" type="text" placeholder="Dein Name" [(ngModel)]="contactData.name" name="name" [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
+                        <input required id="input_name" (blur)="showHint('name')" type="text" placeholder="Dein Name" [(ngModel)]="contactData.name" name="name" [ngClass]="{'border-green-success': borderGreenName, 'border-red-fail': borderRedName}" (input)="validateName()">
                         <img class="validation-icon" [ngClass]="{'d-none': !isNameValid || !contactData.name}" src="./../../../assets/contactme/successSymbol.png">
                         <img class="validation-icon" [ngClass]="{'d-none': isNameValid || !contactData.name}" src="./../../../assets/contactme/errorSymbol.png">
                         </div>
                         <span id="errorName" [ngClass]="{'d-none': isNameValid || !contactData.name}">Ihr Name wird benötigt</span>
 
                         <div class="inputfieldEmail">
-                            <input required id="input_email" type="email" placeholder="E-mail" [(ngModel)]="contactData.email" name="email" [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" (input)="validateEmail()">
+                            <input required id="input_email" (blur)="showHint('email')" type="email" placeholder="E-mail" [(ngModel)]="contactData.email" name="email" [ngClass]="{'border-green-success': borderGreenMail, 'border-red-fail': borderRedMail}" (input)="validateEmail()">
                             <img class="validation-icon" [ngClass]="{'d-none': !successImgEmail || !contactData.email}" src="./../../../assets/contactme/successSymbol.png">
                             <img class="validation-icon" [ngClass]="{'d-none': successImgEmail || !contactData.email}" src="./../../../assets/contactme/errorSymbol.png">
                         </div>
@@ -106,15 +108,17 @@
                             <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
                             <span>Ich habe die <a href="privacy-policy">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung zu.</span>
                         </div>
-                        <span id="errorPrivacy" [ngClass]="{'d-none': errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
+                        <span id="errorPrivacy" [ngClass]="{'d-none': !errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
                     
                         <div *ngIf="successMessage" class="success-message">
                             {{ successMessage }}
                         </div>
 
-                        <button type="submit" class="send-btn click-effect" [disabled]="!checkbox" [ngClass]="{'send-btn': !isCheckboxChecked}">Senden</button>
+                        <button type="submit" class="send-btn click-effect" [disabled]="!isFormValid()" [ngClass]="{'send-btn': !checkbox}">Senden</button>
                     </form>
-                    <img class="back-to-landingpage-btn" onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+                    <div class="back-to-landingpage-btn">
+                        <img onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+                    </div>
                 </div>
             </aside>
         </div>
