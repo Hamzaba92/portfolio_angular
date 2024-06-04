@@ -15,7 +15,7 @@ footer {
 
     .max-width-container {
         max-width: 1920px;
-        width: 95%;
+        width: 100%;
         height: 100%;
         color: white;
         display: flex;
@@ -54,10 +54,16 @@ footer {
         .overcontainer-right {
             display: flex;
             column-gap: 30px;
+            padding-right: 5%;
+            a{
+                height: 30px;
+                width: 30px;
+                object-fit: contain;
+            }
 
             img {
-                height: 30;
-                width: 30;
+                height: 30px;
+                width: 30px;
                 object-fit: contain;
 
                 &:hover {

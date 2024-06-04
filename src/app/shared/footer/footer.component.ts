@@ -10,4 +10,12 @@ import { LanguageService } from '../../language.service';
 export class FooterComponent {
 
   languageService = inject(LanguageService);
+
+  openLinkGithub(){
+    window.open('https://github.com/Hamzaba92');
+  }
+
+  openLinkLinkedIn(){
+    window.open('https://www.linkedin.com');
+  }
 }

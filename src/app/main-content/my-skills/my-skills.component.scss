@@ -5,7 +5,7 @@ $color_button: #00BEE8;
 @import './mediaquery.my-skills.scss';
 
 .background-my-skills {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $color_background;
     flex-direction: column;
     width: 100%;

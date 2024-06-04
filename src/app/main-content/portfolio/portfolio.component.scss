@@ -15,8 +15,9 @@ $color_button: #00BEE8;
         max-width: 1920px;
         .blue-smoke-left-side {
             position: absolute;
-            left: 0;
             top: 355%;
+            display: flex;
+            max-width: max-content;
             img {
                 height: 480px;
                 width: 390px;

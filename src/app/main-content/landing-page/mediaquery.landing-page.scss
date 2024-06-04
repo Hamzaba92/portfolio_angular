@@ -1,3 +1,42 @@
+@media (min-width: 2000px) {
+    
+    .portrait-container {
+        position: absolute;
+        top: 18%!important;
+        left: -25px;
+        width: 50%;
+        height: 35%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+
+        .leftbehindfoto-blue {
+            width: 89%;
+            height: 118%;
+            position: absolute;
+            left: -16%;
+            top: 57%;
+            transform: rotate(91deg);
+        }
+
+        .rightbehindfoto-turquise {
+            width: 69%;
+            height: 170%;
+            position: absolute;
+            right: 5%;
+            top: 19%;
+            transform: rotate(66deg);
+            z-index: -1;
+        }
+
+        .portraitfoto {
+            position: relative;
+            height: 555px;
+
+        }
+    }
+}
+
 @media (max-width: 2000px) {
     .portrait-container {
         position: absolute;
