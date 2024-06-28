@@ -151,7 +151,7 @@ $color_button: #00BEE8;
         column-gap: 20px;
         font-weight: 500;
         height: 214px;
-
+      
             .empty-bar {
                 height: 2px;
                 width: 100px;
@@ -162,6 +162,7 @@ $color_button: #00BEE8;
             }
 
             .github-svg {
+                
                 &:hover {
                     scale: 1.25;
                     cursor: pointer;
@@ -170,6 +171,7 @@ $color_button: #00BEE8;
             }
 
             .email-svg {
+  
                 &:hover {
                     scale: 1.25;
                     cursor: pointer;

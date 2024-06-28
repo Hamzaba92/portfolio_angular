@@ -74,6 +74,8 @@ footer {
             }
         }
 
+        
+
     }
 }
 
@@ -97,49 +99,28 @@ footer {
     color: white;
 }
 
-.letter6 {
+.letter-klammer-links, .letter-klammer-rechts{
+    font-size: 37px;
+    font-weight: 600;
     color: white;
 }
-
-.letter7 {
-    color: white;
-}
-
-.letter8 {
-    color: $color_button;
-}
-
-.letter9 {
-    color: $color_button;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 5.9px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0.18em;
-        height: 0.18em;
-        background-color: white;
-        border-radius: 50%;
-    }
-}
-
-.letter10 {
-    color: $color_button;
+.slash-bar{
+    font-size: 28px;
+    color: #00BEE8;
+    font-weight: 800;
 }
 
 .letter1,
 .letter2,
 .letter3,
 .letter4,
-.letter5,
-.letter6,
-.letter7,
-.letter8,
-.letter9,
-.letter10 {
-    font-size: 24px;
+.letter5
+{
+    font-size: 26px;
     font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }

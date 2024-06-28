@@ -27,7 +27,7 @@ export class PortfolioComponent {
   }
 
   openLinkJoin(){
-    window.open('https://join.mudzahedin-rizvanovic.com/Login/login.html');
+    window.open('https://join.hamza-bajramoski.net/index.html');
   }
 
   openLinkJoinGithub(){
@@ -35,7 +35,7 @@ export class PortfolioComponent {
   }
 
   openLinkPolloLoco(){
-    window.open('https://el-pollo-loco.mudzahedin-rizvanovic.com/index.html');
+    window.open('https://el-pollo-loco.hamza-bajramoski.net/index.html');
   }
 
   openLinkPolloLocoGithub(){

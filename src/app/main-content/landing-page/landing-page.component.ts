@@ -14,7 +14,7 @@ export class LandingPageComponent {
 
 
   openLinkLinkedIn(){
-    window.open('https://www.linkedin.com');
+    window.open('https://www.linkedin.com/in/hamza-bajramoski-404a90294/');
   }
 
   openLinkGithub(){

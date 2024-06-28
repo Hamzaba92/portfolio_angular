@@ -20,43 +20,23 @@
             .overcontainer-left {
 
                 .logo {
+
                     .letter1,
                     .letter2,
                     .letter3,
                     .letter4,
-                    .letter5,
-                    .letter6,
-                    .letter7,
-                    .letter8,
-                    .letter9,
-                    .letter10 {
-                        font-size: 16px!important;
+                    .letter5{
+                        font-size: 16px !important;
                         font-weight: 600;
                     }
 
-                    .letter9 {
-                        color: $color_button;
-                        position: relative;
-                    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            top: 4.4px!important;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            width: 0.18em;
-                            height: 0.18em;
-                            background-color: white;
-                            border-radius: 50%;
-                        }
-                    }
                 }
 
                 text-decoration: none;
 
                 p {
                     margin: 0;
-
+                    font-size: 16px;
                     a {
                         text-decoration: none;
                         color: white;
@@ -82,12 +62,13 @@
                 display: flex;
                 column-gap: 30px;
 
-                a{
+                a {
                     display: flex;
-                    img{
-                    height: 15px!important;
-                    width: 30px!important;
-                    object-fit: contain;
+
+                    img {
+                        height: 15px !important;
+                        width: 30px !important;
+                        object-fit: contain;
                     }
                 }
 
@@ -122,99 +103,106 @@
             height: 100%;
             color: white;
             display: flex;
-            flex-direction: column!important;
-            justify-content: space-evenly!important;
+            flex-direction: column !important;
+            justify-content: space-evenly !important;
             align-items: center;
 
 
             .overcontainer-left {
 
+                text-decoration: none;
+                padding-left: 0% !important;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 .logo {
+
+
+                .letter-klammer-links,
+                .letter-klammer-rechts {
+                        font-size: 22px !important;
+                        font-weight: 600;
+                        color: white;
+                    }
+                
+                    .slash-bar {
+                        font-size: 22px !important;
+                        color: #00BEE8;
+                        font-weight: 800;
+                    }
+
                     .letter1,
                     .letter2,
                     .letter3,
                     .letter4,
-                    .letter5,
-                    .letter6,
-                    .letter7,
-                    .letter8,
-                    .letter9,
-                    .letter10 {
-                        font-size: 16px!important;
+                    .letter5 {
+                        font-size: 18px !important;
                         font-weight: 600;
                     }
 
-                    .letter9 {
-                        color: $color_button;
-                        position: relative;
-                    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            top: 4.4px!important;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            width: 0.18em;
-                            height: 0.18em;
-                            background-color: white;
-                            border-radius: 50%;
+
+                    text-decoration: none;
+
+                    p {
+                        margin: 0;
+                        padding-left: 0% !important;
+                        font-size: 13px !important;
+                        
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 13px!important;
+
+                            &:hover {
+                                cursor: pointer;
+                                text-decoration: underline;
+                                text-decoration-color: #00BEE8;
+                            }
                         }
                     }
                 }
 
-                text-decoration: none;
+                .overcontainer-middle {
+                    color: white;
 
-                p {
-                    margin: 0;
-                    padding-left: 20%!important;
+                    span {
+                        font-size: 12px !important;
+                    }
+                }
+
+                .overcontainer-right {
+                    display: flex;
+                    column-gap: 30px;
+                    padding-right: 0 !important;
 
                     a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 11px!important;
+                        display: flex;
+
+                        img {
+                            height: 15px !important;
+                            width: 30px !important;
+                            object-fit: contain;
+                        }
+                    }
+
+                    img {
+                        height: 15px !important;
+                        width: 30px !important;
+                        object-fit: contain;
+
                         &:hover {
+                            scale: 1.25;
                             cursor: pointer;
-                            text-decoration: underline;
-                            text-decoration-color: #00BEE8;
+                            transition: all ease-in-out 0.3s;
                         }
                     }
                 }
+
+
+
             }
-
-            .overcontainer-middle {
-                color: white;
-
-                span {
-                    font-size: 12px !important;
-                }
-            }
-
-            .overcontainer-right {
-                display: flex;
-                column-gap: 30px;
-                padding-right: 0!important;
-                a{
-                    display: flex;
-                    img{
-                    height: 15px!important;
-                    width: 30px!important;
-                    object-fit: contain;
-                    }
-                }
-
-                img {
-                    height: 15px !important;
-                    width: 30px !important;
-                    object-fit: contain;
-
-                    &:hover {
-                        scale: 1.25;
-                        cursor: pointer;
-                        transition: all ease-in-out 0.3s;
-                    }
-                }
-            }
-
         }
     }
+
+
 }

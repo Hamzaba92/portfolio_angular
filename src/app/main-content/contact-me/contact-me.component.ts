@@ -58,7 +58,7 @@ export class ContactMeComponent {
   successMessage= '';
 
   post = {
-    endPoint: 'https://mudzahedin-rizvanovic.com/sendMail.php',
+    endPoint: 'https://hamza-bajramoski.net/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

@@ -27,8 +27,8 @@
                     <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
                         assign users and categories.</p>
                     <div class="buttons">
-                        <button class="live-btn">Live Test</button>
-                        <button class="github-btn">Github</button>
+                        <button (click)="openLinkJoin()" class="live-btn">Live Test</button>
+                        <button (click)="openLinkJoinGithub()" class="github-btn">Github</button>
                     </div>
                 </div>
             </section>
@@ -40,8 +40,8 @@
                     <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa
                         to fight against the crazy hen.</p>
                     <div class="buttons">
-                        <button class="live-btn-pepe">Live Test</button>
-                        <button class="github-btn-pepe">Github</button>
+                        <button (click)="openLinkPolloLoco()" class="live-btn-pepe">Live Test</button>
+                        <button (click)="openLinkPolloLocoGithub()" class="github-btn-pepe">Github</button>
                     </div>
                 </div>
                 <div class="right-img">
@@ -51,7 +51,7 @@
 
             <section class="portfolio-conti">
                 <div class="left-img">
-                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook.png">
+                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook_HB.png">
                 </div>
                 <div class="github-livetest">
                     <header class="Portfolio">
@@ -64,7 +64,7 @@
                         showcases projects and skills with a smooth user experience and interactive features.</p>
                     <div class="buttons">
                         <button #hoverButton (mouseover)="changeText(hoverButton)" (mouseout)="resetText(hoverButton)" class="live-btn">{{ buttonText }}</button>
-                        <button class="github-btn">Github</button>
+                        <button (click)="openLinkPortfolioGithub()" class="github-btn">Github</button>
                     </div>
                 </div>
             </section>
@@ -125,7 +125,7 @@
 
             <section class="portfolio-conti">
                 <div class="left-img">
-                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook.png">
+                    <img src="./../../../assets/portfolio_macbook_templates/portfolio_macbook_HB.png">
                 </div>
                 <div class="github-livetest">
                     <header class="Portfolio">
