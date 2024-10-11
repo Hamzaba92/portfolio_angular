@@ -45,6 +45,22 @@ export class PortfolioComponent {
   openLinkPortfolioGithub(){
     window.open('https://github.com/Hamzaba92/portfolio_angular');
   }
+
+  openLinkPokedex(){
+    window.open('https://pokedex.hamza-bajramoski.net/');
+  }
+
+  openLinkPokedexGithub(){
+    window.open('https://github.com/Hamzaba92/pokedex');
+  }
+
+  openLinkStreamada(){
+    window.open('https://streamada.com');
+  }
+
+  openLinkStreamadaGithub(){
+    window.open('https://github.com/Hamzaba92/streamada_frontend');
+  }
 }
 
 

@@ -72,6 +72,7 @@ $color_button: #00BEE8;
 
 
 
+
         .projects {
             font-family: 'Poppins';
             color: white;
@@ -80,6 +81,91 @@ $color_button: #00BEE8;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+
+            .pokedex-conti {
+                height: 340px;
+                width: 1920px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                z-index: 7;
+    
+                .livetest-github {
+                    width: 500px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    column-gap: 112px;
+                    z-index: 7;
+                    header {
+                        color: $color_violett;
+                        font-size: 28px;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+    
+                    span {
+                        font-size: 19px;
+                        color: $color_button;
+                        font-weight: 400;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 2px;
+                        display: flex;
+                        text-align: end;
+                    }
+                }
+    
+                .buttons {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 35px;
+                    margin-top: 2px;
+                    z-index: 7;
+                    .live-btn-pokedex {
+                        background-color: $color_violett;
+                        color: white;
+                        border: none;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 50px;
+                        width: 128px;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+                        z-index: 7;
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+    
+                    .github-btn-pokedex {
+                        color: white;
+                        background-color: $color_background;
+                        border: solid 1px $color_button;
+                        border-radius: 10px 10px 10px 10px;
+                        height: 50px;
+                        width: 128px;
+                        font-family: 'Poppins';
+                        font-size: 20px;
+                        z-index: 7;
+                        &:hover {
+                            background-color: $color_button;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                }
+    
+            }
 
             .join-conti {
                 height: 340px;
@@ -97,7 +183,7 @@ $color_button: #00BEE8;
                         margin-bottom: 35px;
                         z-index: 7;
                         &:hover {
-                            cursor: pointer;
+                            cursor: default;
                             filter: grayscale(0);
                             transform: scale(1.15);
                             transition: all ease-in-out 0.7s;
@@ -175,7 +261,6 @@ $color_button: #00BEE8;
 
                 }
             }
-
 
             .el-pollo-loco-conti {
                 height: 340px;
@@ -268,7 +353,7 @@ $color_button: #00BEE8;
                     margin-bottom: 35px;
                     z-index: 7;
                     &:hover {
-                        cursor: pointer;
+                        cursor: default;
 
                         transform: scale(1.15);
                         filter: grayscale(0);
@@ -278,65 +363,152 @@ $color_button: #00BEE8;
 
             }
 
-        }
-
-        .portfolio-conti {
-            height: 340px;
-            width: 1920px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            z-index: 7;
-
-            .left-img {
-
-                img {
-                    height: 396px;
-                    filter: grayscale(100);
-                    margin-bottom: 35px;
-                    z-index: 7;
-                    &:hover {
-                        cursor: pointer;
-                        filter: grayscale(0);
-                        transform: scale(1.15);
-                        transition: all ease-in-out 0.7s;
-                    }
-                }
-            }
-
-            .github-livetest {
-                width: 500px;
-                height: 150px;
+            .portfolio-conti {
+                height: 340px;
+                width: 1920px;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                column-gap: 112px;
+                justify-content: space-evenly;
+                align-items: center;
                 z-index: 7;
-                header {
-                    color: $color_violett;
-                    font-size: 28px;
-                    font-weight: 700;
+    
+                .left-img {
+    
+                    img {
+                        height: 396px;
+                        filter: grayscale(100);
+                        margin-bottom: 35px;
+                        z-index: 7;
+                        &:hover {
+                            cursor: default;
+                            filter: grayscale(0);
+                            transform: scale(1.15);
+                            transition: all ease-in-out 0.7s;
+                        }
+                    }
                 }
-
-                .over-description {
-                    font-size: 19px;
-                    color: $color_button;
-                    font-weight: 400;
+    
+                .github-livetest {
+                    width: 500px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    column-gap: 112px;
+                    z-index: 7;
+                    header {
+                        color: $color_violett;
+                        font-size: 28px;
+                        font-weight: 700;
+                    }
+    
+                    .over-description {
+                        font-size: 19px;
+                        color: $color_button;
+                        font-weight: 400;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 2px;
+                    }
+    
+                    .buttons {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 35px;
+                        margin-top: 2px;
+                        z-index: 7;
+                        .live-btn {
+                            background-color: $color_violett;
+                            color: white;
+                            border: none;
+                            border-radius: 10px 10px 10px 10px;
+                            height: 50px;
+                            width: 128px;
+                            font-family: 'Poppins';
+                            font-size: 20px;
+                            z-index: 7;
+                            &:hover {
+                                background-color: $color_button;
+                                cursor: pointer;
+                                transition: all ease-in-out 0.3s;
+                            }
+    
+    
+                        }
+    
+                        .github-btn {
+                            color: white;
+                            background-color: $color_background;
+                            border: solid 1px $color_button;
+                            border-radius: 10px 10px 10px 10px;
+                            height: 50px;
+                            width: 128px;
+                            font-family: 'Poppins';
+                            font-size: 20px;
+                            z-index: 7;
+                            &:hover {
+                                background-color: $color_button;
+                                cursor: pointer;
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+                    }
+    
+    
                 }
+            }
 
-                p {
-                    font-size: 14px;
-                    font-weight: 400;
-                    margin-top: 2px;
+
+            .streamada-conti {
+                height: 340px;
+                width: 1920px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                z-index: 7;
+    
+                .livetest-github {
+                    width: 500px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    column-gap: 112px;
+                    z-index: 7;
+                    header {
+                        color: $color_violett;
+                        font-size: 28px;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+    
+                    span {
+                        font-size: 19px;
+                        color: $color_button;
+                        font-weight: 400;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 2px;
+                        display: flex;
+                        text-align: end;
+                    }
                 }
-
+    
                 .buttons {
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: flex-end;
                     gap: 35px;
                     margin-top: 2px;
                     z-index: 7;
-                    .live-btn {
+                    .live-btn-streamada {
                         background-color: $color_violett;
                         color: white;
                         border: none;
@@ -351,11 +523,9 @@ $color_button: #00BEE8;
                             cursor: pointer;
                             transition: all ease-in-out 0.3s;
                         }
-
-
                     }
-
-                    .github-btn {
+    
+                    .github-btn-streamada {
                         color: white;
                         background-color: $color_background;
                         border: solid 1px $color_button;
@@ -372,10 +542,12 @@ $color_button: #00BEE8;
                         }
                     }
                 }
-
-
+    
             }
+
         }
+
+
     }
 
 

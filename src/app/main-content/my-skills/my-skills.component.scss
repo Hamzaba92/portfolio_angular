@@ -50,16 +50,18 @@ $color_button: #00BEE8;
             font-size: 4rem;
             font-family: "Poppins";
             color: $color_violett;
+            align-items: center;
 
             img {
-                height: 88px;
-                width: 75px;
+                height: 69px;
+                width: 64px;
                 z-index: 2;
             }
 
         }
 
     }
+
 
     .myskills-txt-btn {
         width: 500px;

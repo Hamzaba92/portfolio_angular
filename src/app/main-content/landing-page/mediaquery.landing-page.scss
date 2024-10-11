@@ -512,7 +512,7 @@
     
             .portraitfoto {
                 position: relative;
-                height: 305px !important;
+                height: 270px !important;
     
             }
         }
@@ -522,11 +522,8 @@
 //mobile-version
 
 @media (max-width: 500px) {
-    .overcontainer-left{
-        .email-txt{
-            display: none;
-        }
-    }
+ 
+    
 
     .iam-dev-txt{
     position: absolute;
@@ -560,7 +557,7 @@
         width: 113%!important;
         height: 36%!important;
         .portraitfoto{
-            height: 358px!important;
+            height: 305px!important;
         }
     }
 

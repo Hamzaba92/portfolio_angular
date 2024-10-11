@@ -241,7 +241,6 @@ $color_button: #00BEE8;
     }
 
 
-
     .blue-smoke-left {
         display: flex;
         height: 500px;
@@ -273,6 +272,7 @@ $color_button: #00BEE8;
 
 .send-btn {
     opacity: 0.4 !important;
+    cursor: default!important;
 }
 
 .click-effect {
