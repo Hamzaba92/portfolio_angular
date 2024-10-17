@@ -1,4 +1,10 @@
 
 <app-navbar></app-navbar>
+
+<div *ngIf="isLoading" class="spinner-overlay">
+    <div class="spinner"></div>
+    <span class="spinner-text">H/B</span>
+  </div>
+
 <router-outlet></router-outlet>
 <app-footer></app-footer>

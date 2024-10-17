@@ -5,7 +5,7 @@ import { LandingPageComponent } from './main-content/landing-page/landing-page.c
 import { AboutMeComponent } from './main-content/about-me/about-me.component';
 import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
 import * as AOS from 'aos';
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ContactMeComponent } from './main-content/contact-me/contact-me.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -17,7 +17,7 @@ import { ImprintComponent } from './imprint/imprint.component';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, LandingPageComponent, 
   AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
-   ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent],
+   ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -26,12 +26,16 @@ export class AppComponent implements OnInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
+  isLoading = true;
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init();
     }
 
+    setTimeout(()=>{
+      this.isLoading = false;
+    }, 3500);
   }
 
 
