@@ -15,35 +15,65 @@ import { ImprintComponent } from './imprint/imprint.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingPageComponent, 
-  AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
-   ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, LandingPageComponent,
+    AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
+    ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'portfolio_angular';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private cdr: ChangeDetectorRef, private renderer: Renderer2) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private cdr: ChangeDetectorRef, private renderer: Renderer2) { }
 
   isLoading = true;
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      AOS.init();
+      const images = document.querySelectorAll('img');
+      let loadedImages = 0;
 
-      this.renderer.listen('window', 'load', () => {
-        this.isLoading = false;
-        this.cdr.detectChanges();
-      })
-    };
+      if (images.length === 0) {
+        this.finishLoading(); // Falls keine Bilder vorhanden sind, Spinner direkt beenden
+      }
 
+      images.forEach((img) => {
+        this.renderer.listen(img, 'load', () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            this.finishLoading();
+          }
+        });
+        this.renderer.listen(img, 'error', () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            this.finishLoading();
+          }
+        });
+      });
+
+      setTimeout(() => this.finishLoading(), 5000);
+    }
   }
 
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
+  }
 
-
-
-
-
+  private finishLoading() {
+    if (this.isLoading) {
+      this.isLoading = false;
+      this.cdr.detectChanges();
+    }
+  }
 
 }
+
+
+
+
+
+
+
