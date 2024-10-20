@@ -431,7 +431,7 @@ $color_button: #00BEE8;
                             z-index: 7;
                             &:hover {
                                 background-color: $color_button;
-                                cursor: pointer;
+                                cursor: default;
                                 transition: all ease-in-out 0.3s;
                             }
     

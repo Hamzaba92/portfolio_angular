@@ -1,4 +1,4 @@
-import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject, AfterViewInit, ChangeDetectorRef, Renderer2 } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
@@ -24,18 +24,20 @@ import { ImprintComponent } from './imprint/imprint.component';
 export class AppComponent implements OnInit {
   title = 'portfolio_angular';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private cdr: ChangeDetectorRef, private renderer: Renderer2) {}
 
   isLoading = true;
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init();
-    }
 
-    setTimeout(()=>{
-      this.isLoading = false;
-    }, 3500);
+      this.renderer.listen('window', 'load', () => {
+        this.isLoading = false;
+        this.cdr.detectChanges();
+      })
+    };
+
   }
 
 
