@@ -9,7 +9,7 @@ import { PortfolioComponent } from '../../main-content/portfolio/portfolio.compo
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, RouterLinkActive, LandingPageComponent, PortfolioComponent],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

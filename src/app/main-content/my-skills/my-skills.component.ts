@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, NgModule, Renderer2, ViewChild, AfterViewInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, RouterLinkActive,],
+  imports: [CommonModule, FormsModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })

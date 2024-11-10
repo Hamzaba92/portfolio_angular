@@ -1,40 +1,42 @@
 import { Component, OnInit, PLATFORM_ID, Inject, AfterViewInit, ChangeDetectorRef, Renderer2 } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
-import { AboutMeComponent } from './main-content/about-me/about-me.component';
-import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
 import * as AOS from 'aos';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ContactMeComponent } from './main-content/contact-me/contact-me.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, LandingPageComponent,
-    AboutMeComponent, RouterLink, MySkillsComponent, PortfolioComponent,
-    ContactMeComponent, FooterComponent, PrivacyPolicyComponent, ImprintComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, 
+      ContactMeComponent, FooterComponent, ImprintComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'portfolio_angular';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private cdr: ChangeDetectorRef, private renderer: Renderer2) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, 
+  private cdr: ChangeDetectorRef,
+  private renderer: Renderer2,
+  private meta: Meta,
+  private titleService: Title) { }
 
   isLoading = true;
 
   ngOnInit() {
+
+    this.setMetaTags();
+
     if (isPlatformBrowser(this.platformId)) {
       const images = document.querySelectorAll('img');
       let loadedImages = 0;
 
       if (images.length === 0) {
-        this.finishLoading(); // Falls keine Bilder vorhanden sind, Spinner direkt beenden
+        this.finishLoading(); 
       }
 
       images.forEach((img) => {
@@ -67,6 +69,19 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.isLoading = false;
       this.cdr.detectChanges();
     }
+  }
+
+  private setMetaTags() {
+    this.titleService.setTitle('Hamza Bajramoski | Full-Stack Developer & SEO Freelancer');
+    this.meta.addTags([
+      { name: 'description', content: 'Portfolio von Hamza Bajramoski, Full-Stack Developer und SEO-Freelancer mit Schwerpunkt auf Angular, Django und Suchmaschinenoptimierung.' },
+      { name: 'keywords', content: 'Hamza Bajramoski, Full-Stack Developer, SEO, Freelancer, Angular, Django, Suchmaschinenoptimierung, SEO-Dienstleistungen, DevOps, DevSecOps' },
+      { property: 'og:title', content: 'Hamza Bajramoski | Full-Stack Developer & SEO Freelancer' },
+      { property: 'og:description', content: 'Erfahre mehr über Hamza Bajramoski, seine Skills in Webentwicklung und SEO sowie seine Projekte als Freelancer.' },
+      { property: 'og:url', content: 'https://hamza-bajramoski.net' },
+      { property: 'og:image', content: 'https://hamza-bajramoski.net/assets/about-me/portfolio_2.0.png'},
+      { property: 'og:type', content: 'website' }
+    ]);
   }
 
 }

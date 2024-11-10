@@ -1,25 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, Inject, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../language.service';
-import { MySkillsComponent } from '../my-skills/my-skills.component';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HttpClient, HttpClientModule, withFetch } from '@angular/common/http';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [CommonModule, FormsModule, MySkillsComponent, RouterLink, RouterLinkActive, HttpClientModule,],
+  imports: [CommonModule, FormsModule, HttpClientModule,],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   languageService = inject(LanguageService);
 
   http = inject(HttpClient);
 
-  
+  scrollToTop(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
 
   contactData = {
     name: "",
@@ -191,5 +196,7 @@ export class ContactMeComponent {
     this.errorImgMessage = !this.isMessageValid && this.contactData.message.length > 0;
     this.successImgMessage = this.isMessageValid;
   }
+
+
 
 }

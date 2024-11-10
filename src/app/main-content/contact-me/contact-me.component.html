@@ -57,7 +57,7 @@
                         <button type="submit" class="send-btn click-effect" [disabled]="!isFormValid()" [ngClass]="{'send-btn': !checkbox}">Senden</button>
                     </form>
                     <div class="back-to-landingpage-btn">
-                        <img onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+                        <img (click)="scrollToTop()" src="./../../../assets/contactme/go_up_button.png">
                     </div>
                 </div>
                 </aside>
