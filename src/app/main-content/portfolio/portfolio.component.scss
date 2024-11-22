@@ -552,3 +552,8 @@ $color_button: #00BEE8;
 
 
 }
+
+.highlightable::selection{
+    background-color: #00BEE8;
+    color: whitesmoke;
+}

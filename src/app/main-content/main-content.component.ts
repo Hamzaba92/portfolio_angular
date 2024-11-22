@@ -7,10 +7,10 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd, Data } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, Data, Event } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
-
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-main-content',
@@ -34,6 +34,7 @@ export class MainContentComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private metaService: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
@@ -42,11 +43,11 @@ export class MainContentComponent implements OnInit, OnDestroy {
       // Beim ersten Laden prüfen
       this.scrollToSection();
 
-      // Bei jeder Navigation prüfen
       this.routerSubscription = this.router.events
-        .pipe(filter(event => event instanceof NavigationEnd))
-        .subscribe(() => {
+        .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
+        .subscribe((event: NavigationEnd) => {
           this.scrollToSection();
+          this.setCanonicalUrl(`https://hamza-bajramoski.net${event.urlAfterRedirects}`);
         });
     }
   }
@@ -75,4 +76,22 @@ export class MainContentComponent implements OnInit, OnDestroy {
       }, 0);
     }
   }
+
+
+  private setCanonicalUrl(url: string): void {
+    if (!url.endsWith('/')) {
+      url += '/';
+    }
+
+    const existingLink: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
+    if (existingLink) {
+      existingLink.setAttribute('href', url);
+    } else {
+      const link: HTMLLinkElement = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      link.setAttribute('href', url);
+      document.head.appendChild(link);
+    }
+}
+
 }

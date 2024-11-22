@@ -4,6 +4,17 @@ $color_button: #00BEE8;
 
 @import './mediaquery.landing-page.scss';
 
+#animated-title::after {
+    content: "|";               
+    animation: blink 0.9s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
 .background-landing-page {
     height: 100vh;
     width: 100%;;
@@ -110,22 +121,26 @@ $color_button: #00BEE8;
 
     button {
         width: 165px;
-        height: 58px;
-        font-size: 23px;
-        font-weight: 400;
+        height: 80px;
+        font-size: 20px;
+        font-weight: 600;
         background-color: $color_button;
         color: white;
-        border-radius: 9px 9px 9px 9px;
-        border: none;
+        border-radius: 18px 18px 18px 18px;
+        border: 3px whitesmoke;
         margin-right: 175px;
         margin-top: 36px;
+        position: relative;
+        transition: all ease-in-out 0.55s;
 
         &:hover {
-            background-color: $color_violett;
+            background-color:  0 0 12px $color_violett;
             scale: 1.2;
             cursor: pointer;
             transition: all ease-in-out 0.55s;
         }
+
+
     }
 }
 
@@ -196,7 +211,6 @@ $color_button: #00BEE8;
                 }
             }
         
-
     }
 
     .overcontainer-right {
@@ -206,21 +220,54 @@ $color_button: #00BEE8;
 
         img {
             display: flex;
-            animation: pulse 1.5s infinite;
         }
 
     }
 
 }
 
-@keyframes pulse {
+.highlightable::selection{
+    background-color: #00BEE8;
+    color: whitesmoke;
+}
+
+.gentle-bubble-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00BEE8, #4B47FF);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: gentleWobble 5s infinite ease-in-out;
+  }
+  
+  .gentle-bubble-button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes gentleWobble {
     0% {
-        transform: scale(1);
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-2px, -1px) rotate(-1deg);
     }
     50% {
-        transform: scale(1.07);
+      transform: translate(2px, 1px) rotate(1deg);
+    }
+    75% {
+      transform: translate(-1px, 0) rotate(0deg);
     }
     100% {
-        transform: scale(1);
+      transform: translate(0, 0) rotate(0deg);
     }
-}
+  }
+  
+  

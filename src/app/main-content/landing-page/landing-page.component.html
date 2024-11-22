@@ -12,13 +12,13 @@
         </div>
 
         <div class="iam-dev-txt">
-            <span class="rotate-txt">I am</span>
+            <span class="rotate-txt highlightable">I am</span>
 
             <div class="flex-coloum">
-                <span class="name">Hamza Bajramoski</span>
-                <span class="color-change">Fullstack Developer</span>
+                <span class="name highlightable">Hamza Bajramoski</span>
+                <span class="color-change" id="animated-title"></span>
                 <div class="button-lets-talk">
-                    <button [routerLink]="['/contact']">Let's talk!</button>
+                    <button [routerLink]="['/contact']" class="cursor-hover gentle-bubble-button">Jetzt Offerte einholen!</button>
                 </div>
             </div>
 
@@ -29,17 +29,17 @@
 
                 <div class="empty-bar"></div>
             
-                <div class="github-svg">
+                <div class="github-svg cursor-hover">
                     <img (click)="openLinkGithub()" src="./../../../assets/landingpage/github.svg">
                 </div>
             
-                <div class="email-svg">
+                <div class="email-svg cursor-hover">
                     <a href='mailto:hamzabaj1992@gmail.com'>
                         <img src="./../../../assets/landingpage/email.svg">
                     </a>
                 </div>
             
-                <div class="linkedIn-svg">
+                <div class="linkedIn-svg cursor-hover">
                     <img (click)="openLinkLinkedIn()" src="./../../../assets/landingpage/Linkedin button.svg">
                 </div>
             

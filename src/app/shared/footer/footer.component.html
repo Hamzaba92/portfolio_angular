@@ -12,9 +12,9 @@
                 <span class="letter-klammer-rechts"> > </span>
             </div>
             @if (languageService.langDE) {
-            <p><a href="imprint">Imprint</a></p>
+            <p><a href="imprint" class="custom-cursor">Imprint</a></p>
             }@else {
-                <p><a href="imprint">Impressum</a></p>
+                <p><a href="imprint" class="custom-cursor">Impressum</a></p>
             }
         </div>
 
@@ -23,9 +23,9 @@
         </div>
 
         <div class="overcontainer-right">
-            <img (click)="openLinkGithub()" src="./../../../assets/landingpage/github.svg">
-            <a href='mailto:hamzabaj1992@gmail.com'><img src="./../../../assets/landingpage/email.svg"></a>
-            <img (click)="openLinkLinkedIn()" src="./../../../assets/landingpage/Linkedin button.svg">
+            <img (click)="openLinkGithub()" src="./../../../assets/landingpage/github.svg" class="cursor-hover">
+            <a href='mailto:hamzabaj1992@gmail.com'><img src="./../../../assets/landingpage/email.svg" class="cursor-hover"></a>
+            <img (click)="openLinkLinkedIn()" src="./../../../assets/landingpage/Linkedin button.svg" class="cursor-hover">
         </div>
     </main>    
 </footer>

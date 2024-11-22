@@ -4,16 +4,15 @@
         
         <header data-aos="fade-right" data-aos-duration="1500">
             <div class="left-bar"></div>
-            <span>Contact</span>
+            <span class="highlightable">Contact</span>
         </header>
 
         <div class="content-container">
             <aside class="left-side">
                 <div class="left-side-txt" data-aos="fade-right" data-aos-duration="1500">
-                    <span class="subtitle">Got a problem to solve?</span>
-                    <p class="first">Contact me through this form, I am interested in hearing from you, knowing your ideas
-                        and contributing to your projects with my work.</p>
-                    <p class="second">Need a Fullstack developer? <b>Contact me!</b></p>
+                    <span class="subtitle highlightable">Freelance Sofware Development</span>
+                    <p class="first highlightable">Feel free to contact me trough this form. I look forward to learning about your ideas and levaraging my experience to create custom software solutions for your projects.</p>
+                    <p class="second highlightable">Software Development | SEO | Web Development</p>
                 </div>
             </aside>
 
@@ -46,7 +45,7 @@
                         <div class="checkbox-cont">
                             <img *ngIf="checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
                             <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
-                            <span>I've read the<a href="privacy-policy">privacy-policy</a>and agree to the processing of my data as outlined.</span>
+                            <span class="highlightable">I've read the<a href="privacy-policy">privacy-policy</a>and agree to the processing of my data as outlined.</span>
                         </div>
                         <span id="errorPrivacy" [ngClass]="{'d-none': !errorMsgPrivacy}">Please accept the privacy policy.</span>
                     
@@ -57,7 +56,7 @@
                         <button type="submit" class="send-btn click-effect" [disabled]="!isFormValid()" [ngClass]="{'send-btn': !checkbox}">Senden</button>
                     </form>
                     <div class="back-to-landingpage-btn">
-                        <img (click)="scrollToTop()" src="./../../../assets/contactme/go_up_button.png">
+                        <img class="cursor-hover" (click)="scrollToTop()" src="./../../../assets/contactme/go_up_button.png">
                     </div>
                 </div>
                 </aside>
@@ -65,15 +64,15 @@
             } @else {
             <header data-aos="fade-right" data-aos-duration="1500">
                 <div class="left-bar"></div>
-                <span>Kontakt</span>
+                <span class="highlightable">Kontakt</span>
             </header>
 
             <div class="content-container">
                 <aside class="left-side">
                     <div class="left-side-txt" data-aos="fade-right" data-aos-duration="1500">
-                        <span class="subtitle">Suchen Sie eine Lösung für Ihr Problem?</span>
-                        <p class="first">Bitte kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, Ihre Ideen kennenzulernen und mit meiner Expertise zu Ihren Projekten beizutragen.</p>
-                        <p class="second">Benötigen Sie einen erfahrenen Fullstack-Entwickler?</p>
+                        <span class="subtitle highlightable">Freelance Softwareentwicklung</span>
+                        <p class="first highlightable">Bitte kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, Ihre Ideen kennenzulernen und mit meiner Expertise zu Ihren Projekten beizutragen.</p>
+                        <p class="second highlightable">Softwareenwicklung | SEO | Webentwicklung</p>
                     </div>
                 </aside>
 
@@ -106,7 +105,7 @@
                         <div class="checkbox-cont">
                             <img *ngIf="checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_checked.png">
                             <img *ngIf="!checkbox" (click)="acceptCheckbox(); sendForm()" src="../../../assets/contactme/checkbox_unchecked.png">
-                            <span>Ich habe die <a href="privacy-policy">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung zu.</span>
+                            <span class="highlightable">Ich habe die <a href="privacy-policy">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung zu.</span>
                         </div>
                         <span id="errorPrivacy" [ngClass]="{'d-none': !errorMsgPrivacy}">Bitte akzeptieren Sie die Datenschutzbestimmung</span>
                     
@@ -117,7 +116,7 @@
                         <button type="submit" class="send-btn click-effect" [disabled]="!isFormValid()" [ngClass]="{'send-btn': !checkbox}">Senden</button>
                     </form>
                     <div class="back-to-landingpage-btn">
-                        <img onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
+                        <img class="cursor-hover" onclick="location.href='#'" src="./../../../assets/contactme/go_up_button.png">
                     </div>
                 </div>
             </aside>

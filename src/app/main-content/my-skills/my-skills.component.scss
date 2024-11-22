@@ -62,7 +62,6 @@ $color_button: #00BEE8;
 
     }
 
-
     .myskills-txt-btn {
         width: 500px;
         height: 279px;
@@ -178,4 +177,9 @@ a:hover:after {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     transform: translateX(0px);
+}
+
+.highlightable::selection{
+    background-color: #00BEE8;
+    color: whitesmoke;
 }
