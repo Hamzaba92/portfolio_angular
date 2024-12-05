@@ -1,7 +1,7 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, AfterViewInit, NgZone, Inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import Typed from 'typed.js';
 
 @Component({
@@ -33,9 +33,12 @@ export class LandingPageComponent implements AfterViewInit{
       this.ngZone.runOutsideAngular(() => {
         const options = {
           strings: [
-          "Web Developer.",
-            "Softwareentwicklung.",
-            "SEO-Freelancer."
+          "Web-development.",
+            "E-Commerce.",
+            "SEO-Optimierung.",
+            "Google-Ads.",
+            "Meta-Pixel.",
+            "E-Mail-Marketing."
           ],
           typeSpeed: 120,
           backSpeed: 80,
