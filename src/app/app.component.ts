@@ -87,26 +87,26 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   private setMetaTags() {
-    this.titleService.setTitle('Hamza Bajramoski | Full-Stack Developer & SEO Freelancer');
+    this.titleService.setTitle('Freelance Web App Entwicklung');
     this.meta.addTags([
       {
         name: 'description',
         content:
-          'Portfolio von Hamza Bajramoski, Full-Stack Developer und SEO-Freelancer mit Schwerpunkt auf Angular, Django und Suchmaschinenoptimierung.',
+          'Entdecken Sie das Portfolio von Hamza Bajramoski | Ihrem erfahrenen Webentwickler und Marketing-Spezialisten. Fordern Sie noch heute eine preiswerte Offerte an.',
       },
       {
         name: 'keywords',
         content:
-          'Hamza Bajramoski, Full-Stack Developer, SEO, Freelancer, Angular, Django, Suchmaschinenoptimierung, SEO-Dienstleistungen, DevOps, DevSecOps',
+          'hamza bajramoski, e commerce, seo freelancer, angular material, django python, suchmaschinenoptimierung kosten, web entwicklung hamburg, web applikation entwicklung, web app entwicklung kosten, meta ads, meta business suite, e mail marketing services',
       },
-      { property: 'og:title', content: 'Hamza Bajramoski | Full-Stack Developer & SEO Freelancer' },
+      { property: 'og:title', content: 'Freelance Web App Entwicklung' },
       {
         property: 'og:description',
         content:
-          'Erfahre mehr über Hamza Bajramoski, seine Skills in Webentwicklung und SEO sowie seine Projekte als Freelancer.',
+          'Portfolio | Webentwicklung | Marketing-Spezialist | Hamza Bajramoski',
       },
       { property: 'og:url', content: 'https://hamza-bajramoski.net' },
-      { property: 'og:image', content: 'https://hamza-bajramoski.net/assets/about-me/portfolio_2.0.png' },
+      { property: 'og:image', content: 'https://hamza-bajramoski.net/assets/Hamza_Bajramoski.jpg' },
       { property: 'og:type', content: 'website' },
     ]);
   }

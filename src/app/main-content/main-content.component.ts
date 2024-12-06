@@ -79,9 +79,6 @@ export class MainContentComponent implements OnInit, OnDestroy {
 
 
   private setCanonicalUrl(url: string): void {
-    if (!url.endsWith('/')) {
-      url += '/';
-    }
 
     const existingLink: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
     if (existingLink) {
